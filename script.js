@@ -1,7 +1,7 @@
 /**
  * WD WEB STUDIO — Scripts Interativos
  * Umuarama — Paraná — Brasil
- * Autoridade, Conformidade e Performance
+ * Autoridade, Estratégia e Engenharia
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,18 +26,46 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll();
   }
 
-  // 3. Menu Mobile Drawer
+  // 3. Menu Mobile Drawer Acessível
   const mobileBtn = document.getElementById('mobileMenuBtn');
   const mobileDrawer = document.getElementById('mobileDrawer');
-  
+
+  const closeMobileDrawer = () => {
+    if (!mobileDrawer || !mobileBtn) return;
+    mobileDrawer.classList.remove('open');
+    mobileBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    const icon = mobileBtn.querySelector('[data-lucide]');
+    if (icon) {
+      icon.setAttribute('data-lucide', 'menu');
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+    }
+  };
+
   if (mobileBtn && mobileDrawer) {
     mobileBtn.addEventListener('click', () => {
       const isOpen = mobileDrawer.classList.toggle('open');
-      mobileBtn.setAttribute('aria-expanded', isOpen);
+      mobileBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+
       const icon = mobileBtn.querySelector('[data-lucide]');
       if (icon) {
         icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
         if (typeof lucide !== 'undefined') lucide.createIcons();
+      }
+
+      if (isOpen) {
+        // Move o foco para o primeiro link acessível
+        const firstLink = mobileDrawer.querySelector('a');
+        if (firstLink) firstLink.focus();
+      }
+    });
+
+    // Fechar ao teclar Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+        closeMobileDrawer();
+        mobileBtn.focus();
       }
     });
 
@@ -45,18 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileLinks = mobileDrawer.querySelectorAll('a');
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobileDrawer.classList.remove('open');
-        mobileBtn.setAttribute('aria-expanded', 'false');
-        const icon = mobileBtn.querySelector('[data-lucide]');
-        if (icon) {
-          icon.setAttribute('data-lucide', 'menu');
-          if (typeof lucide !== 'undefined') lucide.createIcons();
-        }
+        closeMobileDrawer();
       });
     });
   }
 
-  // 4. Banner de Consentimento de Cookies (LGPD)
+  // 4. Banner de Consentimento de Cookies
   const cookieBanner = document.getElementById('cookieBanner');
   const cookieAcceptBtn = document.getElementById('cookieAcceptBtn');
   const cookieDeclineBtn = document.getElementById('cookieDeclineBtn');
@@ -86,43 +108,69 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 5. Acordeão FAQ
+  // 5. Acordeão FAQ Acessível
   const faqButtons = document.querySelectorAll('.faq-button');
   faqButtons.forEach(button => {
     button.addEventListener('click', () => {
       const currentItem = button.closest('.faq-item');
+      if (!currentItem) return;
       const isActive = currentItem.classList.contains('active');
 
-      // Fecha todos os outros itens
+      // Fecha outros itens
       document.querySelectorAll('.faq-item').forEach(item => {
         if (item !== currentItem) {
           item.classList.remove('active');
+          const otherBtn = item.querySelector('.faq-button');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
         }
       });
 
       // Alterna o atual
       if (isActive) {
         currentItem.classList.remove('active');
+        button.setAttribute('aria-expanded', 'false');
       } else {
         currentItem.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
       }
     });
   });
 
-  // 6. Formulário de Diagnóstico / Auditoria
+  // 6. Formulário de Diagnóstico / Auditoria com Validação
   const auditForm = document.getElementById('auditForm');
   if (auditForm) {
     auditForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const name = document.getElementById('auditName')?.value.trim() || '';
-      const phone = document.getElementById('auditPhone')?.value.trim() || '';
-      const segment = document.getElementById('auditSegment')?.value || 'Não informado';
-      const currentUrl = document.getElementById('auditUrl')?.value.trim() || 'Ainda não possui site';
-      const goal = document.getElementById('auditGoal')?.value || 'Diagnóstico Geral';
+      const nameInput = document.getElementById('auditName');
+      const phoneInput = document.getElementById('auditPhone');
+      const segmentInput = document.getElementById('auditSegment');
+      const urlInput = document.getElementById('auditUrl');
+      const goalInput = document.getElementById('auditGoal');
 
-      // Monta mensagem estruturada para WhatsApp da WD Web Studio
-      const msg = `*SOLICITAÇÃO DE ANÁLISE ESTRATÉGICA — WD WEB STUDIO*
+      const name = nameInput?.value.trim() || '';
+      const phone = phoneInput?.value.trim() || '';
+      const segment = segmentInput?.value || '';
+      const currentUrl = urlInput?.value.trim() || 'Ainda não possui site';
+      const goal = goalInput?.value || 'Diagnóstico Geral';
+
+      // Validação visual simples e acessível
+      let hasError = false;
+      [nameInput, phoneInput, segmentInput].forEach(field => {
+        if (field && !field.value.trim()) {
+          field.style.borderColor = '#E05D52';
+          hasError = true;
+        } else if (field) {
+          field.style.borderColor = 'var(--border-color)';
+        }
+      });
+
+      if (hasError) {
+        return;
+      }
+
+      // Mensagem estruturada e contextualizada para WhatsApp da WD Web Studio
+      const msg = `*SOLICITAÇÃO DE ANÁLISE — WD WEB STUDIO*
 ---------------------------------------
 *Nome:* ${name}
 *WhatsApp:* ${phone}
@@ -130,28 +178,26 @@ document.addEventListener('DOMContentLoaded', () => {
 *Site Atual:* ${currentUrl}
 *Principal Objetivo:* ${goal}
 ---------------------------------------
-_Olá! Preenchi o formulário no site da WD Web Studio e gostaria de solicitar uma análise estratégica da minha presença digital._`;
+_Olá! Preenchi o formulário no site da WD Web Studio e gostaria de receber uma análise da minha presença digital._`;
 
       const encodedMsg = encodeURIComponent(msg);
-      // Número comercial da WD Web Studio (Umuarama/PR)
       const waNumber = '5544991823532';
       const waUrl = `https://wa.me/${waNumber}?text=${encodedMsg}`;
 
-      // Feedback visual no botão
       const submitBtn = auditForm.querySelector('button[type="submit"]');
       if (submitBtn) {
         const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = `<span>Iniciando Análise...</span>`;
+        submitBtn.innerHTML = `<span>Encaminhando...</span>`;
         submitBtn.disabled = true;
 
         setTimeout(() => {
           window.open(waUrl, '_blank', 'noopener,noreferrer');
-          submitBtn.innerHTML = `<span>✓ Encaminhado com Sucesso</span>`;
+          submitBtn.innerHTML = `<span>✓ Encaminhado para o WhatsApp</span>`;
           setTimeout(() => {
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
           }, 3500);
-        }, 600);
+        }, 500);
       } else {
         window.open(waUrl, '_blank', 'noopener,noreferrer');
       }

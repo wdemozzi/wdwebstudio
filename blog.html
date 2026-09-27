@@ -4,19 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog & Ensaios Estratégicos — WD Web Studio</title>
-  <meta name="description" content="Artigos, análises e ensaios técnicos sobre presença digital, conformidade com conselhos profissionais (CFM/OAB) e arquitetura de conversão.">
+  <meta name="description" content="Artigos, análises e ensaios técnicos sobre presença digital, boas práticas de comunicação profissional e arquitetura de autoridade.">
   <link rel="canonical" href="https://wdwebstudio.com.br/blog">
   
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Blog & Ensaios Estratégicos — WD Web Studio">
-  <meta property="og:description" content="Ideias e métodos sobre engenharia digital, conformidade ética e autoridade técnica.">
-  
+  <meta property="og:description" content="Ideias e métodos sobre engenharia digital, boas práticas e autoridade técnica.">
+  <meta property="og:url" content="https://wdwebstudio.com.br/blog">
+  <meta property="og:site_name" content="WD Web Studio">
+  <meta property="og:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog & Ensaios Estratégicos — WD Web Studio">
+  <meta name="twitter:description" content="Ideias e métodos sobre engenharia digital e autoridade técnica.">
+  <meta name="twitter:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icons (Versão Fixa) -->
+  <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Dados Estruturados / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://wdwebstudio.com.br/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog & Ensaios",
+        "item": "https://wdwebstudio.com.br/blog"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
@@ -24,9 +58,9 @@
   <!-- Header Editorial Tech -->
   <header class="header-main" role="banner">
     <div class="container header-container">
-      <a href="index.html" class="brand-link">
+      <a href="index.html" class="brand-link" aria-label="WD Web Studio - Página Inicial">
         <div class="brand-symbol">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
             <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
           </svg>
         </div>
@@ -36,7 +70,7 @@
         </div>
       </a>
 
-      <nav class="nav-desktop">
+      <nav class="nav-desktop" aria-label="Navegação Principal">
         <a href="index.html" class="nav-link">Início</a>
         <a href="sites-para-medicos.html" class="nav-link">Médicos</a>
         <a href="sites-para-clinicas.html" class="nav-link">Clínicas</a>
@@ -50,10 +84,10 @@
       <div style="display: flex; align-items: center; gap: 14px;">
         <a href="auditoria-de-site.html" class="btn btn-primary btn-sm">
           <span>Solicitar Análise</span>
-          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
         </a>
-        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu" aria-expanded="false">
-          <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileDrawer">
+          <i data-lucide="menu" style="width: 22px; height: 22px;" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -89,10 +123,10 @@
             <span>ENSAIOS & ANÁLISES TÉCNICAS</span>
           </div>
           <h1 class="display-title" style="margin-bottom: 24px;">
-            Pensamento editorial sobre <span class="text-emerald">autoridade</span>, código limpo e ética profissional.
+            Pensamento editorial sobre <span class="text-emerald">autoridade</span>, código limpo e comunicação profissional.
           </h1>
           <p class="text-lead">
-            Compartilhamos ensaios práticos e aprofundados sobre arquitetura de informação, conformidade regulatória nos conselhos de classe e psicologia de decisão na internet.
+            Compartilhamos reflexões práticas sobre arquitetura de informação, boas práticas de comunicação nos segmentos regulamentados e usabilidade na web.
           </p>
         </div>
       </div>
@@ -116,12 +150,12 @@
                 </a>
               </h2>
               <p class="blog-excerpt">
-                A armadilha dos templates genéricos de WordPress, os clichês de agências generalistas e como a falta de clareza na proposta de valor expulsa o público mais exigente do mercado.
+                A armadilha dos templates genéricos, os clichês de agências generalistas e como a falta de clareza na proposta de valor afasta visitantes qualificados.
               </p>
             </div>
             <a href="artigos/por-que-sites-comuns-falham-na-conversao.html" class="blog-link">
               <span>Ler Artigo Completo</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
             </a>
           </article>
 
@@ -129,22 +163,22 @@
           <article class="blog-card">
             <div>
               <div class="blog-meta">
-                <span class="blog-category">Compliance & Deontologia</span>
+                <span class="blog-category">Boas Práticas & Deontologia</span>
                 <span>•</span>
                 <span>8 min de leitura</span>
               </div>
               <h2 class="blog-title">
                 <a href="artigos/conformidade-crm-e-oab-em-sites-profissionais.html">
-                  Conformidade Ética: O Guia Técnico para Sites Médicos e Jurídicos
+                  Comunicação Ética: Guia Técnico para Sites Médicos e Jurídicos
                 </a>
               </h2>
               <p class="blog-excerpt">
-                Como interpretar as regras da Resolução CFM 2.336/2023 e do Provimento 205/2021 da OAB para construir autoridade incontestável sem flertar com riscos disciplinares.
+                Como interpretar as diretrizes da Resolução CFM 2.336/2023 e do Provimento 205/2021 da OAB para construir autoridade com responsabilidade informativa.
               </p>
             </div>
             <a href="artigos/conformidade-crm-e-oab-em-sites-profissionais.html" class="blog-link">
               <span>Ler Artigo Completo</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
             </a>
           </article>
 
@@ -158,22 +192,22 @@
               </div>
               <h2 class="blog-title">
                 <a href="artigos/posicionamento-digital-para-escritorios-contabeis.html">
-                  O Fim do "Emissor de Guias": Posicionamento Digital para Contadores
+                  Contabilidade Consultiva: Estruturando a Presença Digital de Valor
                 </a>
               </h2>
               <p class="blog-excerpt">
-                A estratégia para escapar da guerra predatória de preços da contabilidade online barata através da apresentação de BPO Financeiro e consultoria tributária de alto padrão.
+                A abordagem para valorizar serviços de BPO Financeiro e consultoria tributária de alto padrão em vez de competir por preço.
               </p>
             </div>
             <a href="artigos/posicionamento-digital-para-escritorios-contabeis.html" class="blog-link">
               <span>Ler Artigo Completo</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
             </a>
           </article>
         </div>
 
         <div class="compliance-note-box" style="margin-top: 56px;">
-          <strong>Nota Informativa:</strong> Nossos artigos têm finalidade estritamente técnica, analítica e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+          <strong>Nota Informativa:</strong> Nossos artigos têm finalidade estritamente técnica, analítica e educacional. A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
         </div>
       </div>
     </section>
@@ -187,11 +221,11 @@
         </div>
         <h2 class="section-title">Quer implementar esses conceitos na sua presença digital?</h2>
         <p class="text-lead" style="margin-top: 16px; margin-bottom: 32px;">
-          Solicite uma análise diagnóstica e descubra como transformar essas diretrizes em um ativo real para seu consultório ou escritório.
+          Solicite uma análise diagnóstica e descubra como aprimorar a presença digital do seu consultório ou escritório.
         </p>
         <a href="auditoria-de-site.html" class="btn btn-primary btn-lg">
           <span>Solicitar Análise de Presença Digital</span>
-          <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+          <i data-lucide="arrow-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
         </a>
       </div>
     </section>
@@ -204,7 +238,7 @@
         <div>
           <a href="index.html" class="brand-link" style="margin-bottom: 18px;">
             <div class="brand-symbol">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
                 <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
               </svg>
             </div>
@@ -246,7 +280,7 @@
       </div>
 
       <div style="padding-top: 24px; border-top: 1px solid var(--border-color); font-size: 0.78rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
-        <strong>Nota Regulamentar:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+        <strong>Nota Informativa:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
       </div>
 
       <div class="footer-bottom">
@@ -262,7 +296,7 @@
   <!-- Cookie Consent -->
   <div id="cookieBanner" class="cookie-banner-wrapper" role="region" aria-label="Consentimento de Cookies">
     <div class="cookie-banner-content">
-      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;"></i></div>
+      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;" aria-hidden="true"></i></div>
       <div>
         <p class="cookie-banner-text">
           Utilizamos cookies essenciais de acordo com a nossa <a href="termos-e-politicas.html#privacidade" class="cookie-privacy-link">Política de Privacidade</a>.

@@ -7,16 +7,50 @@
   <meta name="description" content="Termos e Condições de Uso e Política de Privacidade e Proteção de Dados (LGPD) da WD Web Studio. Transparência técnica e respeito legal.">
   <link rel="canonical" href="https://wdwebstudio.com.br/termos-e-politicas">
   
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Termos de Uso e Política de Privacidade — WD Web Studio">
   <meta property="og:description" content="Normas de utilização do site e diretrizes de proteção de dados e privacidade em conformidade com a LGPD.">
-  
+  <meta property="og:url" content="https://wdwebstudio.com.br/termos-e-politicas">
+  <meta property="og:site_name" content="WD Web Studio">
+  <meta property="og:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Termos de Uso e Política de Privacidade — WD Web Studio">
+  <meta name="twitter:description" content="Normas de utilização do site e diretrizes de proteção de dados.">
+  <meta name="twitter:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icons (Versão Fixa) -->
+  <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Dados Estruturados / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://wdwebstudio.com.br/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Termos de Uso e Políticas",
+        "item": "https://wdwebstudio.com.br/termos-e-politicas"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
@@ -24,9 +58,9 @@
   <!-- Header Editorial Tech -->
   <header class="header-main" role="banner">
     <div class="container header-container">
-      <a href="index.html" class="brand-link">
+      <a href="index.html" class="brand-link" aria-label="WD Web Studio - Página Inicial">
         <div class="brand-symbol">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
             <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
           </svg>
         </div>
@@ -36,7 +70,7 @@
         </div>
       </a>
 
-      <nav class="nav-desktop">
+      <nav class="nav-desktop" aria-label="Navegação Principal">
         <a href="index.html" class="nav-link">Início</a>
         <a href="sites-para-medicos.html" class="nav-link">Médicos</a>
         <a href="sites-para-clinicas.html" class="nav-link">Clínicas</a>
@@ -50,10 +84,10 @@
       <div style="display: flex; align-items: center; gap: 14px;">
         <a href="auditoria-de-site.html" class="btn btn-primary btn-sm">
           <span>Solicitar Análise</span>
-          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
         </a>
-        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu" aria-expanded="false">
-          <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileDrawer">
+          <i data-lucide="menu" style="width: 22px; height: 22px;" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -90,7 +124,7 @@
             Termos de Uso e Política de Privacidade
           </h1>
           <p class="text-lead">
-            Documento unificado de governança técnica, privacidade de dados nos moldes da Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD) e regras de navegação da WD Web Studio.
+            Documento de governança técnica, privacidade de dados nos moldes da Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD) e regras de navegação da WD Web Studio.
           </p>
 
           <div style="display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap;">
@@ -106,30 +140,30 @@
 
           <h3>1.1. Identificação do Controlador</h3>
           <p>
-            Este website é de propriedade, mantido e operado pela <strong>WD Web Studio</strong>, estúdio boutique de criação digital localizado no município de Umuarama, Estado do Paraná, Brasil, prestando serviços técnicos especializados de desenvolvimento web para clientes em âmbito nacional e remoto.
+            Este website é de propriedade, mantido e operado pela <strong>WD Web Studio</strong>, estúdio digital localizado no município de Umuarama, Estado do Paraná, Brasil, prestando serviços técnicos de desenvolvimento web e estratégia digital para clientes em âmbito nacional e remoto.
           </p>
 
           <h3>1.2. Objeto e Aceitação</h3>
           <p>
-            Ao acessar e navegar por este site ou submeter formulários de análise estratégica, o usuário declara ter lido, compreendido e concordado expressamente com todas as cláusulas estipuladas nestes Termos de Uso e na Política de Privacidade anexa.
+            Ao acessar e navegar por este site ou submeter formulários de contato, o usuário declara ter lido, compreendido e concordado com as diretrizes estipuladas nestes Termos de Uso e na Política de Privacidade anexa.
           </p>
 
           <h3>1.3. Propriedade Intelectual e Autoral</h3>
           <p>
-            Todos os elementos gráficos, monigramas (incluindo o símbolo WD), esquemas de design (WD Grid), códigos-fonte HTML/CSS/JS, textos, ensaios e metodologias conceituais são de titularidade exclusiva da WD Web Studio ou foram devidamente licenciados para uso no presente site. É expressamente vedada a reprodução total ou parcial, engenharia reversa ou comercialização não autorizada de qualquer material.
+            Todos os elementos gráficos, marcas, monogramas (incluindo o símbolo WD), códigos-fonte HTML/CSS/JS, textos, ensaios e metodologias conceituais são de titularidade da WD Web Studio ou foram devidamente licenciados para uso. É vedada a reprodução total ou parcial ou comercialização não autorizada de qualquer material.
           </p>
 
-          <h3>1.4. Isenção e Observação Obrigatória de Compliance</h3>
+          <h3>1.4. Isenção e Aviso de Boas Práticas e Compliance</h3>
           <p>
-            A WD Web Studio desenvolve websites profissionais observando as diretrizes técnicas das resoluções éticas vigentes (como CFM 2.336/2023, OAB 205/2021 e CFC). Todavia, ressalva-se que:
+            A WD Web Studio desenvolve websites profissionais observando as diretrizes técnicas das resoluções vigentes nos segmentos que atende. Todavia, ressalva-se expressamente que:
           </p>
           <div class="compliance-note-box">
-            <strong>Aviso Legal Obrigatório:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+            <strong>Aviso de Boas Práticas e Compliance:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
           </div>
 
           <h3>1.5. Foro de Eleição</h3>
           <p>
-            Para dirimir quaisquer controvérsias oriundas destes Termos ou da utilização deste site, fica eleito o Foro da Comarca de Umuarama, Estado do Paraná, com expressa renúncia a qualquer outro, por mais privilegiado que seja.
+            Para dirimir quaisquer controvérsias decorrentes destes Termos ou da utilização deste site, fica eleito o Foro da Comarca de Umuarama, Estado do Paraná, com renúncia a qualquer outro.
           </p>
         </div>
 
@@ -139,32 +173,32 @@
 
           <h3>2.1. Compromisso com a Lei nº 13.709/2018</h3>
           <p>
-            A WD Web Studio adota com máximo rigor as exigências da Lei Geral de Proteção de Dados Pessoais (LGPD), assegurando que todo tratamento de dados seja pautado pela finalidade, necessidade, transparência, segurança e livre acesso do titular.
+            A WD Web Studio adota as diretrizes da Lei Geral de Proteção de Dados Pessoais (LGPD), assegurando que o tratamento de dados ocorra com base na finalidade, necessidade, transparência, segurança e livre acesso do titular.
           </p>
 
           <h3>2.2. Dados Pessoais Coletados e Finalidade</h3>
           <p>
-            Coletamos apenas as informações voluntariamente fornecidas por você através de nossos formulários de análise técnica e diagnóstico:
+            Coletamos apenas as informações voluntariamente fornecidas por você através de nossos formulários de análise técnica e contato:
           </p>
           <ul>
-            <li><strong>Nome / Razão Social:</strong> Para identificação e personalização do atendimento técnico.</li>
-            <li><strong>WhatsApp / Telefone:</strong> Para retorno ágil com o diagnóstico preliminar solicitado.</li>
-            <li><strong>Segmento Profissional e URL do Site Atual:</strong> Para avaliação técnica prévia de conformidade e velocidade.</li>
+            <li><strong>Nome / Responsável:</strong> Para identificação e personalização do atendimento.</li>
+            <li><strong>WhatsApp / Telefone:</strong> Para retorno com a análise solicitada pelo próprio usuário.</li>
+            <li><strong>Segmento Profissional e URL do Site Atual:</strong> Para avaliação técnica prévia de posicionamento.</li>
           </ul>
 
           <h3>2.3. Base Legal para Tratamento</h3>
           <p>
-            O tratamento dos dados apoia-se no Artigo 7º, Inciso V (procedimentos preliminares relacionados a contrato do qual seja parte o titular, a pedido do titular dos dados) e no Artigo 7º, Inciso IX (legítimo interesse do controlador) da Lei 13.709/2018.
+            O tratamento dos dados apoia-se no Artigo 7º, Inciso V (procedimentos preliminares relacionados a contrato a pedido do titular dos dados) e no Artigo 7º, Inciso IX (legítimo interesse do controlador) da Lei nº 13.709/2018.
           </p>
 
           <h3>2.4. Canal de WhatsApp e Comunicação Direta</h3>
           <p>
-            Ao acionar o envio de formulários ou clicar nos botões de contato, o usuário é direcionado para o aplicativo WhatsApp Web ou mobile oficial da WD Web Studio. As mensagens trocadas são protegidas por criptografia de ponta a ponta e utilizadas exclusivamente para responder às solicitações comerciais e técnicas originadas pelo próprio usuário.
+            Ao acionar o envio de formulários ou clicar nos botões de contato, o usuário é direcionado para o aplicativo WhatsApp Web ou mobile da WD Web Studio. As mensagens trocadas são utilizadas exclusivamente para responder às solicitações comerciais e técnicas originadas pelo próprio usuário.
           </p>
 
           <h3 id="cookies">2.5. Política de Cookies e Tecnologias de Navegação</h3>
           <p>
-            Nosso site utiliza cookies essenciais para garantir o funcionamento técnico e seguro das páginas (como memorização do consentimento de cookies via <code>localStorage</code>) e recursos analíticos anônimos para mensurar tempo de carregamento e estabilidade do servidor. O visitante pode a qualquer momento aceitar todos ou optar por apenas essenciais através do nosso banner de consentimento.
+            Nosso site utiliza cookies essenciais para garantir o funcionamento técnico das páginas (como memorização do consentimento de cookies via <code>localStorage</code>) e recursos analíticos anônimos para mensurar estabilidade e tempo de resposta. O visitante pode a qualquer momento aceitar todos ou optar por apenas essenciais através do nosso banner de consentimento.
           </p>
 
           <h3>2.6. Direitos do Titular de Dados</h3>
@@ -193,7 +227,7 @@
         <div>
           <a href="index.html" class="brand-link" style="margin-bottom: 18px;">
             <div class="brand-symbol">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
                 <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
               </svg>
             </div>
@@ -203,7 +237,7 @@
             </div>
           </a>
           <p style="font-size: 0.88rem; line-height: 1.7; max-width: 340px;">
-            Estúdio digital boutique sediado em Umuarama - PR. Conformidade ética e transparência com a LGPD.
+            Estúdio digital boutique sediado em Umuarama - PR. Transparência técnica e respeito à LGPD.
           </p>
         </div>
 
@@ -247,7 +281,7 @@
   <!-- Cookie Consent -->
   <div id="cookieBanner" class="cookie-banner-wrapper" role="region" aria-label="Consentimento de Cookies">
     <div class="cookie-banner-content">
-      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;"></i></div>
+      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;" aria-hidden="true"></i></div>
       <div>
         <p class="cookie-banner-text">
           Utilizamos cookies essenciais de acordo com a nossa <a href="termos-e-politicas.html#privacidade" class="cookie-privacy-link">Política de Privacidade</a>.

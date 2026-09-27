@@ -4,19 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sites para Advogados & Bancas Jurídicas — WD Web Studio</title>
-  <meta name="description" content="Presença digital sóbria e estratégica para escritórios de advocacia. Alinhamento com o Provimento 205/2021 do CFOAB, autoridade técnica e conformidade com a LGPD.">
+  <meta name="description" content="Presença digital institucional para escritórios de advocacia. Desenvolvimento orientado às boas práticas do Provimento 205/2021 do CFOAB e respeito à LGPD.">
   <link rel="canonical" href="https://wdwebstudio.com.br/sites-para-advogados">
   
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sites para Advogados & Bancas Jurídicas — WD Web Studio">
-  <meta property="og:description" content="Posicionamento de alto prestígio para escritórios e bancas de advocacia com rigor deontológico.">
-  
+  <meta property="og:description" content="Posicionamento de alto prestígio para escritórios e bancas de advocacia orientado às boas práticas da OAB.">
+  <meta property="og:url" content="https://wdwebstudio.com.br/sites-para-advogados">
+  <meta property="og:site_name" content="WD Web Studio">
+  <meta property="og:image" content="https://wdwebstudio.com.br/assets/cases/preview-janeiro-advocacia.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sites para Advogados & Bancas Jurídicas — WD Web Studio">
+  <meta name="twitter:description" content="Presença digital institucional e sóbria para escritórios de advocacia.">
+  <meta name="twitter:image" content="https://wdwebstudio.com.br/assets/cases/preview-janeiro-advocacia.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icons (Versão Fixa) -->
+  <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Dados Estruturados / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://wdwebstudio.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sites para Advogados",
+            "item": "https://wdwebstudio.com.br/sites-para-advogados"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "O escritório pode ter botão de WhatsApp no site sem violar as regras da OAB?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. O Provimento 205/2021 autoriza canais diretos de comunicação quando o contato parte da iniciativa espontânea do usuário, mantendo teor institucional e informativo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como a WD atuou no projeto da Janeiro Advocacia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Estruturamos a presença digital do escritório especializado em Direito Previdenciário com linguagem clara, sobriedade visual e canais organizados para contato com a equipe."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
@@ -24,9 +83,9 @@
   <!-- Header Editorial Tech -->
   <header class="header-main" role="banner">
     <div class="container header-container">
-      <a href="index.html" class="brand-link">
+      <a href="index.html" class="brand-link" aria-label="WD Web Studio - Página Inicial">
         <div class="brand-symbol">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
             <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
           </svg>
         </div>
@@ -36,7 +95,7 @@
         </div>
       </a>
 
-      <nav class="nav-desktop">
+      <nav class="nav-desktop" aria-label="Navegação Principal">
         <a href="index.html" class="nav-link">Início</a>
         <a href="sites-para-medicos.html" class="nav-link">Médicos</a>
         <a href="sites-para-clinicas.html" class="nav-link">Clínicas</a>
@@ -50,10 +109,10 @@
       <div style="display: flex; align-items: center; gap: 14px;">
         <a href="auditoria-de-site.html" class="btn btn-primary btn-sm">
           <span>Solicitar Análise</span>
-          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
         </a>
-        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu" aria-expanded="false">
-          <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileDrawer">
+          <i data-lucide="menu" style="width: 22px; height: 22px;" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -94,13 +153,13 @@
             Presença digital sóbria para escritórios que valorizam <span class="text-emerald">prestígio</span> e respeito às normas da OAB.
           </h1>
           <p class="text-lead">
-            Desenvolvemos websites para advogados e bancas jurídicas que buscam clientes de alto valor através de autoridade técnica. Design editorial refinado, sem mercantilização agressiva e rigorosamente alinhado ao Provimento 205/2021 da OAB.
+            Desenvolvemos websites para advogados e bancas jurídicas que buscam fortalecer sua autoridade institucional. Design editorial refinado, sem mercantilização e estruturado considerando as diretrizes do Provimento 205/2021 da OAB.
           </p>
 
           <div class="hero-actions">
             <a href="#diagnostico-advocacia" class="btn btn-primary btn-lg">
               <span>Solicitar Análise de Presença Jurídica</span>
-              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
             </a>
             <a href="portfolio.html#janeiro-advocacia" class="btn btn-secondary btn-lg">
               <span>Conhecer o Case Janeiro Advocacia</span>
@@ -116,50 +175,50 @@
         <div class="section-header-center">
           <div class="badge-kicker">
             <span class="badge-dot"></span>
-            <span>ENGENHARIA PARA BANCAS JURÍDICAS</span>
+            <span>ESTRUTURA PARA BANCAS JURÍDICAS</span>
           </div>
-          <h2 class="section-title">Os Fundamentos de um Site Jurídico de Alto Valor</h2>
+          <h2 class="section-title">Os Fundamentos de um Site Jurídico Institucional</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            A advocacia de excelência não compete por preço ou com promessas de "causa ganha". Ela se sustenta na confiança inabalável e na profundidade de suas teses.
+            A advocacia institucional se sustenta na confiança, discrição e na clareza informativa de sua atuação.
           </p>
         </div>
 
         <div class="solutions-grid">
           <div class="card-studio">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">01. Rigor ao Provimento 205/2021</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Conformidade OAB</h3>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">01. Diretrizes da OAB</div>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Provimento 205/2021</h3>
             <p>
-              Comunicação estritamente informativa e moderada. Sem linguagem mercantil, sem gatilhos apelativos e com identificação ostensiva do número de inscrição na OAB e dos sócios responsáveis.
+              Comunicação de caráter informativo e moderado, sem apelo comercial mercantilista e com identificação ostensiva do número de inscrição na OAB e dos advogados responsáveis.
             </p>
           </div>
 
           <div class="card-studio">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">02. Clareza de Teses & Áreas</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Arquitetura de Atuação</h3>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">02. Clareza de Áreas de Atuação</div>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Estrutura Didática</h3>
             <p>
-              Explicação detalhada das áreas de prática (Empresarial, Tributário, Previdenciário, Cível, etc.) focada nos problemas reais de pessoas físicas e jurídicas, sem hermetismo desnecessário.
+              Apresentação clara dos ramos de prática jurídica do escritório (Direito Previdenciário, Empresarial, Cível, etc.) com linguagem acessível ao público de interesse.
             </p>
           </div>
 
           <div class="card-studio">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">03. Artigos & Teses Informativas</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Autoridade Orgânica (SEO)</h3>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">03. Artigos Informativos</div>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Conteúdo Educativo</h3>
             <p>
-              Publicação de artigos que respondem dúvidas de empresários e indivíduos, posicionando a banca como referência no Google sem violar qualquer vedação de captação indevida.
+              Espaço para publicação de análises e artigos explicativos sobre direitos e jurisprudência, posicionando o escritório como fonte confiável de informação jurídica.
             </p>
           </div>
 
           <div class="card-studio">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">04. Proteção de Dados & LGPD</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Conformidade Legal Ativa</h3>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">04. Proteção de Dados</div>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Governança & LGPD</h3>
             <p>
-              Política de Privacidade transparente, Termos de Uso customizados para advocacia e Banner de Cookies em glassmorphism que demonstram o respeito do escritório à Lei Geral de Proteção de Dados.
+              Política de Privacidade transparente, Termos de Uso institucionais e gestão de cookies coerente com a navegação do site, demonstrando conformidade com a LGPD.
             </p>
           </div>
         </div>
 
         <div class="compliance-note-box">
-          <strong>Aviso Ético:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+          <strong>Aviso de Boas Práticas e Compliance:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
         </div>
       </div>
     </section>
@@ -170,32 +229,32 @@
         <div class="section-header-center">
           <div class="badge-kicker">
             <span class="badge-dot"></span>
-            <span>PUBLICIDADE NA ADVOCACIA</span>
+            <span>COMUNICAÇÃO NA ADVOCACIA</span>
           </div>
-          <h2 class="section-title">Dúvidas Comuns sobre Sites de Advocacia</h2>
+          <h2 class="section-title">Perguntas Comuns sobre Sites de Advocacia</h2>
         </div>
 
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-button" type="button">
-              <span>O escritório pode ter botão de WhatsApp no site sem violar a OAB?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>O escritório pode ter botão de WhatsApp no site sem violar as regras da OAB?</span>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Sim. O Provimento 205/2021 autoriza meios de contato direto e facilitado, desde que o contato parta ativamente do próprio usuário interessado (inbound) e o teor da abordagem seja técnico e institucional, sem ofertas ativas indiscriminadas (cold calling ou spam).
+                Sim. O Provimento 205/2021 autoriza meios de contato direto e facilitado quando a iniciativa parte do próprio interessado, mantendo teor informativo e sem abordagens de captação indevida.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-button" type="button">
-              <span>Como a WD tratou o caso real da Janeiro Advocacia?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>Como a WD atuou no projeto da Janeiro Advocacia?</span>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Para o escritório Janeiro Advocacia, estruturamos uma apresentação sóbria com paleta escura e detalhes em champanhe, separando os ramos de Direito Empresarial, Cível e Previdenciário. Implementamos a política de privacidade integral, termos de uso detalhados e roteamento de triagem seguro via WhatsApp.
+                Desenvolvemos a presença institucional do escritório especializado em Direito Previdenciário com identidade sóbria, organização didática de serviços e canais claros de contato com a equipe jurídica.
               </p>
             </div>
           </div>
@@ -234,7 +293,7 @@
             <div class="form-grid-2">
               <div class="form-group">
                 <label for="auditSegment" class="form-label">Principais Áreas de Atuação *</label>
-                <input type="text" id="auditSegment" class="form-control" placeholder="Ex.: Direito Empresarial, Cível, Tributário" required>
+                <input type="text" id="auditSegment" class="form-control" placeholder="Ex.: Direito Previdenciário, Cível, Empresarial" required>
               </div>
 
               <div class="form-group">
@@ -246,16 +305,16 @@
             <div class="form-group">
               <label for="auditGoal" class="form-label">Objetivo Estratégico *</label>
               <select id="auditGoal" class="form-control" required>
-                <option value="Presença digital sóbria com foco em clientes empresariais">Presença digital sóbria com foco em clientes empresariais</option>
-                <option value="Adequação e blindagem técnica ao Provimento 205/2021 da OAB">Adequação e blindagem técnica ao Provimento 205/2021 da OAB</option>
-                <option value="Geração de autoridade através de artigos e teses jurídicas">Geração de autoridade através de artigos e teses jurídicas</option>
-                <option value="Redesign total para padrão estético institucional premium">Redesign total para padrão estético institucional premium</option>
+                <option value="Presença digital institucional e sóbria">Presença digital institucional e sóbria</option>
+                <option value="Adequação da comunicação às regras do Provimento 205/2021">Adequação da comunicação às regras do Provimento 205/2021</option>
+                <option value="Publicação organizada de artigos e informativos jurídicos">Publicação organizada de artigos e informativos jurídicos</option>
+                <option value="Redesign total para modernização institucional">Redesign total para modernização institucional</option>
               </select>
             </div>
 
             <button type="submit" class="btn btn-primary btn-lg w-full" style="margin-top: 12px;">
               <span>Solicitar Análise de Presença Jurídica</span>
-              <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
             </button>
           </form>
         </div>
@@ -270,7 +329,7 @@
         <div>
           <a href="index.html" class="brand-link" style="margin-bottom: 18px;">
             <div class="brand-symbol">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
                 <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
               </svg>
             </div>
@@ -312,7 +371,7 @@
       </div>
 
       <div style="padding-top: 24px; border-top: 1px solid var(--border-color); font-size: 0.78rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
-        <strong>Nota Regulamentar:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+        <strong>Nota Informativa:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
       </div>
 
       <div class="footer-bottom">
@@ -328,7 +387,7 @@
   <!-- Cookie Consent -->
   <div id="cookieBanner" class="cookie-banner-wrapper" role="region" aria-label="Consentimento de Cookies">
     <div class="cookie-banner-content">
-      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;"></i></div>
+      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;" aria-hidden="true"></i></div>
       <div>
         <p class="cookie-banner-text">
           Utilizamos cookies essenciais de acordo com a nossa <a href="termos-e-politicas.html#privacidade" class="cookie-privacy-link">Política de Privacidade</a>.

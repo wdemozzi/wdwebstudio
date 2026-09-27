@@ -4,19 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sites para Médicos & Consultórios Digitais — WD Web Studio</title>
-  <meta name="description" content="Desenvolvimento de websites e consultórios digitais para médicos especialistas. Alinhamento rigoroso com a Resolução CFM 2.336/2023, SEO E-E-A-T e triagem no WhatsApp.">
+  <meta name="description" content="Desenvolvimento de websites e consultórios digitais para médicos especialistas, orientado às boas práticas da Resolução CFM 2.336/2023, clareza informativa e acolhimento.">
   <link rel="canonical" href="https://wdwebstudio.com.br/sites-para-medicos">
   
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sites para Médicos & Consultórios Digitais — WD Web Studio">
-  <meta property="og:description" content="Presença digital com autoridade médica, acolhimento do paciente e conformidade ética com o CFM.">
-  
+  <meta property="og:description" content="Presença digital com autoridade médica, acolhimento do paciente e orientação ética.">
+  <meta property="og:url" content="https://wdwebstudio.com.br/sites-para-medicos">
+  <meta property="og:site_name" content="WD Web Studio">
+  <meta property="og:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sites para Médicos & Consultórios Digitais — WD Web Studio">
+  <meta name="twitter:description" content="Presença digital com autoridade médica e acolhimento do paciente.">
+  <meta name="twitter:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icons (Versão Fixa) -->
+  <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Dados Estruturados / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://wdwebstudio.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sites para Médicos",
+            "item": "https://wdwebstudio.com.br/sites-para-medicos"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Posso divulgar fotos de procedimentos no meu site?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Resolução CFM 2.336/2023 flexibilizou a divulgação com finalidade estritamente educativa em determinados contextos, exigindo cautela e consentimento formal. Priorizamos ilustrações anatômicas e fotos do ambiente clínico para uma comunicação séria e equilibrada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como é feita a apresentação para pacientes de telemedicina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Criamos uma seção dedicada para atendimento por telemedicina explicando o funcionamento da consulta remota e orientações para agendamento, mantendo a clareza sobre receitas digitais."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
@@ -24,9 +83,9 @@
   <!-- Header Editorial Tech -->
   <header class="header-main" role="banner">
     <div class="container header-container">
-      <a href="index.html" class="brand-link">
+      <a href="index.html" class="brand-link" aria-label="WD Web Studio - Página Inicial">
         <div class="brand-symbol">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
             <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
           </svg>
         </div>
@@ -36,7 +95,7 @@
         </div>
       </a>
 
-      <nav class="nav-desktop">
+      <nav class="nav-desktop" aria-label="Navegação Principal">
         <a href="index.html" class="nav-link">Início</a>
         <a href="sites-para-medicos.html" class="nav-link active">Médicos</a>
         <a href="sites-para-clinicas.html" class="nav-link">Clínicas</a>
@@ -50,10 +109,10 @@
       <div style="display: flex; align-items: center; gap: 14px;">
         <a href="auditoria-de-site.html" class="btn btn-primary btn-sm">
           <span>Solicitar Análise</span>
-          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
         </a>
-        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu" aria-expanded="false">
-          <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileDrawer">
+          <i data-lucide="menu" style="width: 22px; height: 22px;" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -91,19 +150,19 @@
             <span>SAÚDE & ESPECIALIDADES MÉDICAS</span>
           </div>
           <h1 class="display-title" style="margin-bottom: 24px;">
-            Consultórios digitais com a solenidade, acolhimento e <span class="text-emerald">rigor ético</span> que a medicina exige.
+            Consultórios digitais com a solenidade, acolhimento e <span class="text-emerald">clareza</span> que a medicina exige.
           </h1>
           <p class="text-lead">
-            Desenvolvemos a presença online de médicos especialistas que recusam o sensacionalismo. Sites rápidos, com linguagem acolhedora, explicativa e estruturados em conformidade com as regras da Resolução CFM 2.336/2023.
+            Desenvolvemos a presença online de médicos especialistas que priorizam comunicação de valor e recusam o sensacionalismo. Sites com navegação ágil, linguagem explicativa e estruturados considerando as boas práticas da Resolução CFM 2.336/2023.
           </p>
 
           <div class="hero-actions">
             <a href="#diagnostico-medico" class="btn btn-primary btn-lg">
               <span>Solicitar Análise de Consultório Digital</span>
-              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
             </a>
             <a href="portfolio.html" class="btn btn-secondary btn-lg">
-              <span>Ver Projetos na Área da Saúde</span>
+              <span>Ver Projetos Selecionados</span>
             </a>
           </div>
         </div>
@@ -116,51 +175,56 @@
         <div class="section-header-center">
           <div class="badge-kicker">
             <span class="badge-dot"></span>
-            <span>ARQUITETURA CLÍNICA</span>
+            <span>ESTRUTURA PARA CONSULTÓRIOS</span>
           </div>
           <h2 class="section-title">Como a WD Estrutura o Seu Consultório Digital</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            A jornada do paciente que busca um especialista particular começa com angústia e incerteza. Seu site precisa transmitir segurança antes mesmo do primeiro contato.
+            A jornada de quem busca um especialista médico começa com dúvidas e apreensão. Seu site precisa transmitir clareza e credibilidade desde o primeiro contato.
           </p>
         </div>
 
         <div class="solutions-grid">
           <div class="card-studio">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">01. Rigor Deontológico</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Conformidade CFM 2.336/2023</h3>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">01. Boas Práticas Éticas</div>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Orientações do CFM 2.336/2023</h3>
             <p>
-              Exibição clara de CRM e RQE, descrição de procedimentos com foco estritamente educativo e ausência completa de termos vedados, autopromoção mercantilista ou promessas de cura.
+              Exibição clara de CRM e RQE, descrição de áreas de atuação com foco informativo e ausência de termos promocionais abusivos ou promessas de resultado.
             </p>
           </div>
 
           <div class="card-studio">
             <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">02. Humanização & Acolhimento</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Linguagem Empática</h3>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Linguagem Clara e Empática</h3>
             <p>
-              O paciente não procura um currículo acadêmico frio; procura alguém que compreenda seus sintomas. Traduzimos termos clínicos complexos em textos de fácil entendimento e alto respeito.
+              Traduzimos conceitos técnicos em textos de fácil compreensão e respeito ao paciente, proporcionando um ambiente de informação seguro e acolhedor.
             </p>
           </div>
 
           <div class="card-studio">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">03. Triagem Inteligente</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">03. Organização de Contato</div>
             <h3 class="subsection-title" style="margin-bottom: 12px;">Roteamento no WhatsApp</h3>
             <p>
-              Ao clicar no botão de agendamento, a secretária recebe uma mensagem estruturada com a especialidade ou procedimento pesquisado, agilizando o atendimento e filtrando curiosos.
+              O paciente pode iniciar o contato com mensagens contextualizadas pelo serviço de interesse, organizando o atendimento preliminar da equipe da clínica.
             </p>
           </div>
 
           <div class="card-studio">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">04. Autoridade Médica (E-E-A-T)</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Artigos Médicos Dedicados</h3>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">04. Autoridade Educativa</div>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Artigos Médicos Informativos</h3>
             <p>
-              Páginas profundas sobre condições tratadas e abordagens terapêuticas, otimizadas para os critérios de Experiência, Especialidade e Confiabilidade do Google na área de saúde (YMYL).
+              Páginas explicativas sobre condições de saúde e abordagens terapêuticas, estruturadas com rigor conceitual para esclarecer o público e fortalecer o posicionamento.
             </p>
           </div>
         </div>
 
+        <!-- Alerta de Papel das Ferramentas Digitais -->
+        <div style="background: rgba(18, 24, 22, 0.6); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 24px; margin: 32px 0; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+          <strong style="color: var(--text-primary);">Aviso Importante:</strong> Ferramentas digitais auxiliam a jornada do usuário e a comunicação, mas não substituem avaliação médica ou consulta profissional individualizada.
+        </div>
+
         <!-- Compliance Box -->
         <div class="compliance-note-box">
-          <strong>Aviso Ético:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+          <strong>Aviso de Boas Práticas e Compliance:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
         </div>
       </div>
     </section>
@@ -178,25 +242,25 @@
 
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-button" type="button">
+            <button class="faq-button" type="button" aria-expanded="false">
               <span>Posso divulgar fotos de procedimentos no meu site?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                A Resolução CFM 2.336/2023 flexibilizou a divulgação com finalidade estritamente educativa em determinados contextos, porém a prática exige cautela extrema e consentimento formal inequívoco do paciente. Na WD, priorizamos ilustrações anatômicas sobriedade estética e fotos do ambiente clínico para preservar 100% da imagem do médico contra riscos disciplinares.
+                A Resolução CFM 2.336/2023 flexibilizou a divulgação com finalidade estritamente educativa em determinados contextos, exigindo cautela e consentimento formal. Priorizamos ilustrações anatômicas e fotos do ambiente clínico para uma comunicação sóbria, equilibrada e de bom tom.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-button" type="button">
-              <span>Como é feita a integração para pacientes de telemedicina?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>Como é feita a apresentação para pacientes de telemedicina?</span>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Criamos uma seção dedicada para atendimento por telemedicina explicando o funcionamento da consulta remota, emissão de receitas com assinatura digital ICP-Brasil e orientações de agendamento, atendendo pacientes em todo o Brasil ou no exterior.
+                Criamos uma seção dedicada para atendimento por telemedicina explicando o funcionamento da consulta remota e orientações para agendamento, mantendo a clareza sobre emissão de receitas com assinatura digital.
               </p>
             </div>
           </div>
@@ -210,7 +274,7 @@
         <div class="section-header-center">
           <div class="badge-kicker">
             <span class="badge-dot"></span>
-            <span>SOLICITAR CONSULTORIA</span>
+            <span>CONSULTORIA ESPECIALIZADA</span>
           </div>
           <h2 class="section-title">Estruture o Consultório Digital da Sua Especialidade</h2>
           <p class="text-lead" style="margin-top: 16px;">
@@ -247,16 +311,16 @@
             <div class="form-group">
               <label for="auditGoal" class="form-label">Objetivo Prioritário *</label>
               <select id="auditGoal" class="form-control" required>
-                <option value="Consultório Digital completo com rigor CFM">Consultório Digital completo com rigor CFM</option>
-                <option value="Redesign para público particular de alto valor">Redesign para atrair público particular de alto valor</option>
+                <option value="Consultório Digital com foco em autoridade e boas práticas">Consultório Digital com foco em autoridade e boas práticas</option>
+                <option value="Redesign para público particular">Redesign para público particular</option>
                 <option value="Estruturação de consultas presenciais e telemedicina">Estruturação de consultas presenciais e telemedicina</option>
-                <option value="Adequação ética do site atual à Resolução CFM 2.336/23">Adequação ética do site atual à Resolução CFM 2.336/23</option>
+                <option value="Adequação da comunicação às diretrizes do CFM">Adequação da comunicação às diretrizes do CFM</option>
               </select>
             </div>
 
             <button type="submit" class="btn btn-primary btn-lg w-full" style="margin-top: 12px;">
               <span>Solicitar Análise de Consultório Digital</span>
-              <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
             </button>
           </form>
         </div>
@@ -271,7 +335,7 @@
         <div>
           <a href="index.html" class="brand-link" style="margin-bottom: 18px;">
             <div class="brand-symbol">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
                 <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
               </svg>
             </div>
@@ -313,7 +377,7 @@
       </div>
 
       <div style="padding-top: 24px; border-top: 1px solid var(--border-color); font-size: 0.78rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
-        <strong>Nota Regulamentar:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+        <strong>Nota Informativa:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
       </div>
 
       <div class="footer-bottom">
@@ -329,7 +393,7 @@
   <!-- Cookie Consent -->
   <div id="cookieBanner" class="cookie-banner-wrapper" role="region" aria-label="Consentimento de Cookies">
     <div class="cookie-banner-content">
-      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;"></i></div>
+      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;" aria-hidden="true"></i></div>
       <div>
         <p class="cookie-banner-text">
           Utilizamos cookies essenciais de acordo com a nossa <a href="termos-e-politicas.html#privacidade" class="cookie-privacy-link">Política de Privacidade</a>.

@@ -3,26 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WD Web Studio — Sites Premium para Médicos, Advogados, Clínicas e Empresas</title>
-  <meta name="description" content="Estúdio digital boutique em Umuarama - PR. Desenvolvemos sites de alta conversão, autoridade e conformidade técnica para médicos, clínicas, advogados e contadores.">
+  <title>WD Web Studio — Sites Premium para Profissionais e Empresas</title>
+  <meta name="description" content="Estúdio digital boutique em Umuarama - PR. Desenvolvimento orientado à estratégia, autoridade e boas práticas para médicos, clínicas, advogados e contadores.">
   <link rel="canonical" href="https://wdwebstudio.com.br/">
   
-  <!-- Open Graph / Meta -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="WD Web Studio — Sites Premium com Autoridade e Conformidade">
-  <meta property="og:description" content="Estúdio boutique desenvolvendo presença digital estratégica e websites sob medida para profissionais de alto valor.">
+  <meta property="og:title" content="WD Web Studio — Sites Premium com Autoridade e Estratégia">
+  <meta property="og:description" content="Estúdio boutique desenvolvendo presença digital estratégica e websites sob medida para profissionais e empresas de alto valor.">
+  <meta property="og:url" content="https://wdwebstudio.com.br/">
+  <meta property="og:site_name" content="WD Web Studio">
+  <meta property="og:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
   <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WD Web Studio — Sites Premium com Autoridade e Estratégia">
+  <meta name="twitter:description" content="Estúdio boutique desenvolvendo presença digital estratégica para médicos, clínicas, advogados, contadores e empresas.">
+  <meta name="twitter:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
 
   <!-- Google Fonts: Manrope & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icons (Versão Fixa e Otimizada) -->
+  <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Dados Estruturados / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://wdwebstudio.com.br/#organization",
+        "name": "WD Web Studio",
+        "url": "https://wdwebstudio.com.br",
+        "description": "Estúdio digital boutique especializado em sites premium e presença estratégica para profissionais regulamentados e empresas.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Umuarama",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://wdwebstudio.com.br/#website",
+        "url": "https://wdwebstudio.com.br",
+        "name": "WD Web Studio",
+        "publisher": {
+          "@id": "https://wdwebstudio.com.br/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "A WD Web Studio atende profissionais e empresas fora de Umuarama?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Embora nosso estúdio físico esteja sediado em Umuarama, Paraná, nosso fluxo de trabalho é estruturado para atendimento remoto com alinhamento contínuo em qualquer cidade ou estado do Brasil."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o desenvolvimento orientado às regras profissionais?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Desenvolvemos a estrutura técnica e o conteúdo considerando as particularidades de comunicação e diretrizes éticas aplicáveis a cada segmento, como medicina, advocacia e contabilidade."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Por que a WD não utiliza templates prontos de WordPress?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Priorizamos código moderno, limpo e estruturado sob medida, o que proporciona navegação estável, carregamento ágil e redução de vulnerabilidades associadas a plugins de terceiros."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
@@ -32,8 +101,7 @@
     <div class="container header-container">
       <a href="index.html" class="brand-link" aria-label="WD Web Studio - Página Inicial">
         <div class="brand-symbol">
-          <!-- Monograma Geométrico WD -->
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
             <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
           </svg>
         </div>
@@ -58,12 +126,12 @@
       <div style="display: flex; align-items: center; gap: 14px;">
         <a href="auditoria-de-site.html" class="btn btn-primary btn-sm">
           <span>Solicitar Análise</span>
-          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
         </a>
 
         <!-- Botão Menu Mobile -->
-        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu de navegação" aria-expanded="false">
-          <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileDrawer">
+          <i data-lucide="menu" style="width: 22px; height: 22px;" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -84,7 +152,7 @@
     <div style="margin-top: auto; padding-top: 24px;">
       <a href="auditoria-de-site.html" class="btn btn-primary w-full">
         <span>Solicitar Análise Estratégica</span>
-        <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+        <i data-lucide="arrow-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
       </a>
       <p style="font-size: 0.8rem; text-align: center; margin-top: 16px; color: var(--text-secondary);">
         Umuarama — PR | Atendimento Remoto Nacional
@@ -108,13 +176,13 @@
           </h1>
 
           <p class="text-lead" style="max-width: 600px; margin-bottom: 32px;">
-            A WD Web Studio desenvolve experiências digitais estratégicas para profissionais liberais, clínicas e empresas de alto valor. Arquitetura sob medida, redação de autoridade e conformidade técnica para você parar de perder oportunidades no digital.
+            A WD Web Studio desenvolve experiências digitais estratégicas para médicos, clínicas, advogados, contadores e empresas que precisam transformar presença digital em confiança e oportunidades.
           </p>
 
           <div class="hero-actions">
             <a href="auditoria-de-site.html" class="btn btn-primary btn-lg">
               <span>Solicitar uma Análise</span>
-              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
             </a>
             <a href="portfolio.html" class="btn btn-secondary btn-lg">
               <span>Ver Projetos Selecionados</span>
@@ -123,16 +191,16 @@
 
           <div class="hero-trust-badges">
             <div class="hero-trust-item">
-              <i data-lucide="shield-check" class="text-emerald" style="width: 18px; height: 18px;"></i>
-              <span>Alinhamento Regulatório CFM / OAB / CFC</span>
+              <i data-lucide="shield-check" class="text-emerald" style="width: 18px; height: 18px;" aria-hidden="true"></i>
+              <span>Desenvolvimento orientado às regras de cada profissão</span>
             </div>
             <div class="hero-trust-item">
-              <i data-lucide="zap" class="text-emerald" style="width: 18px; height: 18px;"></i>
-              <span>Carregamento em menos de 1 segundo</span>
+              <i data-lucide="zap" class="text-emerald" style="width: 18px; height: 18px;" aria-hidden="true"></i>
+              <span>Código limpo e carregamento ágil</span>
             </div>
             <div class="hero-trust-item">
-              <i data-lucide="message-square" class="text-emerald" style="width: 18px; height: 18px;"></i>
-              <span>Lead Tracking no WhatsApp</span>
+              <i data-lucide="message-square" class="text-emerald" style="width: 18px; height: 18px;" aria-hidden="true"></i>
+              <span>Direcionamento contextualizado no WhatsApp</span>
             </div>
           </div>
         </div>
@@ -160,20 +228,20 @@
 
             <div class="mockup-metrics-grid">
               <div class="mockup-metric-card">
-                <div class="mockup-metric-label">Velocidade (LCP)</div>
-                <div class="mockup-metric-val">0.7s</div>
+                <div class="mockup-metric-label">Arquitetura</div>
+                <div class="mockup-metric-val" style="font-size: 0.95rem;">Estática / Otimizada</div>
               </div>
               <div class="mockup-metric-card">
-                <div class="mockup-metric-label">Google Lighthouse</div>
-                <div class="mockup-metric-val">99/100</div>
+                <div class="mockup-metric-label">Estrutura</div>
+                <div class="mockup-metric-val" style="font-size: 0.95rem;">Sem Bloatware</div>
               </div>
               <div class="mockup-metric-card">
                 <div class="mockup-metric-label">Rastreamento</div>
-                <div class="mockup-metric-val">Ativo</div>
+                <div class="mockup-metric-val" style="font-size: 0.95rem;">Contextualizado</div>
               </div>
               <div class="mockup-metric-card">
-                <div class="mockup-metric-label">Privacidade / LGPD</div>
-                <div class="mockup-metric-val">100%</div>
+                <div class="mockup-metric-label">Governança</div>
+                <div class="mockup-metric-val" style="font-size: 0.95rem;">LGPD Orientada</div>
               </div>
             </div>
 
@@ -183,7 +251,7 @@
                 <i data-lucide="check-circle-2" class="text-emerald" style="width: 14px; height: 14px;"></i>
               </div>
               <div class="mockup-status-item">
-                <span>Copywriting focado no problema real</span>
+                <span>Textos focados na proposta de valor</span>
                 <i data-lucide="check-circle-2" class="text-emerald" style="width: 14px; height: 14px;"></i>
               </div>
               <div class="mockup-status-item">
@@ -217,7 +285,7 @@
             <span class="authority-item-dot">•</span>
           </div>
           <div class="authority-item">
-            <span>Privacidade & LGPD Ativa</span>
+            <span>Boas Práticas de Privacidade</span>
           </div>
         </div>
       </div>
@@ -233,41 +301,41 @@
           </div>
           <h2 class="section-title">O que separa um site comum de uma presença digital estratégica?</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            A maioria dos profissionais investe em sites genéricos que servem apenas como folhetos virtuais esquecidos. A WD constrói ativos digitais desenhados para gerar conversão e confiança.
+            A maioria dos profissionais investe em sites genéricos que servem apenas como folhetos virtuais esquecidos. A WD constrói ativos digitais desenhados para gerar confiança e oportunidades reais.
           </p>
         </div>
 
         <div class="compare-grid">
-          <!-- Coluna 1: O que o mercado entrega -->
+          <!-- Coluna 1: O padrão do mercado -->
           <div class="compare-card-common">
             <div class="compare-header">
               <div>
                 <span style="font-size: 0.75rem; text-transform: uppercase; color: #E05D52; font-weight: 700; letter-spacing: 0.08em;">O padrão do mercado</span>
                 <h3 class="compare-title" style="color: var(--text-primary); margin-top: 4px;">Site Comum de Agência Genérica</h3>
               </div>
-              <i data-lucide="x-circle" style="color: #E05D52; width: 28px; height: 28px;"></i>
+              <i data-lucide="x-circle" style="color: #E05D52; width: 28px; height: 28px;" aria-hidden="true"></i>
             </div>
             
             <ul class="compare-list">
               <li>
-                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;"></i>
-                <span>Templates genéricos de WordPress com dezenas de plugins que tornam o carregamento lento.</span>
+                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Templates genéricos com dezenas de plugins que comprometem estabilidade e carregamento.</span>
               </li>
               <li>
-                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;"></i>
+                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;" aria-hidden="true"></i>
                 <span>Textos vazios, cheios de clichês como "excelência no atendimento" e "tradição e confiança".</span>
               </li>
               <li>
-                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;"></i>
-                <span>Sem qualquer cuidado com resoluções éticas do CFM, OAB ou CFC, expondo o profissional a riscos.</span>
+                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Comunicação construída sem considerar as particularidades éticas de profissões regulamentadas.</span>
               </li>
               <li>
-                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;"></i>
-                <span>Botões de contato genéricos que abrem conversas no WhatsApp sem contexto prévio.</span>
+                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Botões de contato genéricos que iniciam conversas no WhatsApp sem contexto prévio.</span>
               </li>
               <li>
-                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;"></i>
-                <span>Visual infantil ou carregado de efeitos desnecessários que reduzem a autoridade percebida.</span>
+                <i data-lucide="x" style="color: #E05D52; width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Visual carregado de efeitos desnecessários que reduzem a autoridade percebida.</span>
               </li>
             </ul>
           </div>
@@ -279,29 +347,29 @@
                 <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; letter-spacing: 0.08em;">O Método WD Web Studio</span>
                 <h3 class="compare-title" style="color: var(--text-primary); margin-top: 4px;">Presença Digital Estratégica</h3>
               </div>
-              <i data-lucide="check-circle-2" class="text-emerald" style="width: 28px; height: 28px;"></i>
+              <i data-lucide="check-circle-2" class="text-emerald" style="width: 28px; height: 28px;" aria-hidden="true"></i>
             </div>
 
             <ul class="compare-list">
               <li>
-                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;"></i>
-                <span>Arquitetura de alta performance com código moderno e carregamento ultrarrápido (sub-segundo).</span>
+                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Arquitetura com código moderno, estrutura limpa e carregamento ágil.</span>
               </li>
               <li>
-                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;"></i>
-                <span>Redação editorial que traduz a especialidade técnica do profissional em clareza e autoridade.</span>
+                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Redação editorial que traduz a especialidade técnica do profissional com clareza e autoridade.</span>
               </li>
               <li>
-                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;"></i>
-                <span>Estrutura técnica alinhada com as exigências dos conselhos profissionais (CFM 2.336/23, OAB 205/21).</span>
+                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Desenvolvimento orientado às boas práticas de comunicação e às regras aplicáveis ao segmento.</span>
               </li>
               <li>
-                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;"></i>
-                <span>Lead tracking inteligente no WhatsApp com mensagens pré-formatadas pelo serviço pesquisado.</span>
+                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Direcionamento contextualizado no WhatsApp com mensagens formatadas pelo serviço de interesse.</span>
               </li>
               <li>
-                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;"></i>
-                <span>Design sóbrio, anti-clichê e alinhado aos padrões das marcas mais refinadas do mercado.</span>
+                <i data-lucide="check" class="text-emerald" style="width: 18px; height: 18px;" aria-hidden="true"></i>
+                <span>Design sóbrio, anti-clichê e alinhado aos padrões visuais mais refinados do mercado.</span>
               </li>
             </ul>
           </div>
@@ -319,7 +387,7 @@
           </div>
           <h2 class="section-title">Os 8 Pilares da Estrutura WD</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            Cada projeto desenvolvido pela WD Web Studio é concebido sobre oito fundamentos sólidos, combinando engenharia de software e psicologia de decisão.
+            Cada projeto desenvolvido pela WD Web Studio é concebido sobre oito fundamentos sólidos, combinando engenharia de software e estratégia de comunicação.
           </p>
         </div>
 
@@ -338,7 +406,7 @@
             <span class="pillar-num">PILAR 02</span>
             <h3 class="pillar-title">Arquitetura de Informação</h3>
             <p class="pillar-desc">
-              Hierarquia visual milimetricamente pensada para conduzir o visitante do problema à decisão sem dispersão ou atrito.
+              Hierarquia visual pensada para conduzir o visitante do problema à decisão sem dispersão ou atrito.
             </p>
           </div>
 
@@ -347,7 +415,7 @@
             <span class="pillar-num">PILAR 03</span>
             <h3 class="pillar-title">Design Editorial Anti-clichê</h3>
             <p class="pillar-desc">
-              Estética sofisticada, tipografia impecável e ausência absoluta de bancos de imagens genéricos ou soluções infantis.
+              Estética sofisticada, tipografia expressiva e ausência de bancos de imagens genéricos ou soluções amadoras.
             </p>
           </div>
 
@@ -356,34 +424,34 @@
             <span class="pillar-num">PILAR 04</span>
             <h3 class="pillar-title">Copywriting de Autoridade</h3>
             <p class="pillar-desc">
-              Textos clínicos e institucionais que conectam a dor de quem procura com a sofisticação da sua capacidade técnica.
+              Textos institucionais e claros que conectam a necessidade de quem procura à sofisticação da sua capacidade técnica.
             </p>
           </div>
 
           <!-- Pilar 5 -->
           <div class="pillar-card">
             <span class="pillar-num">PILAR 05</span>
-            <h3 class="pillar-title">Lead Tracking no WhatsApp</h3>
+            <h3 class="pillar-title">Direcionamento Contextualizado</h3>
             <p class="pillar-desc">
-              Disparos direcionados com dados do serviço consultado para que sua secretária ou time atenda com precisão e contexto.
+              Mensagens de contato no WhatsApp estruturadas pelo serviço consultado, facilitando o atendimento da sua equipe.
             </p>
           </div>
 
           <!-- Pilar 6 -->
           <div class="pillar-card">
             <span class="pillar-num">PILAR 06</span>
-            <h3 class="pillar-title">Conformidade Técnica</h3>
+            <h3 class="pillar-title">Boas Práticas & Regras</h3>
             <p class="pillar-desc">
-              Respeito rigoroso às balizas éticas profissionais e conformidade legal com a LGPD, cookies e termos de uso transparentes.
+              Desenvolvimento orientado às particularidades de cada segmento profissional e respeito à legislação de privacidade (LGPD).
             </p>
           </div>
 
           <!-- Pilar 7 -->
           <div class="pillar-card">
             <span class="pillar-num">PILAR 07</span>
-            <h3 class="pillar-title">Performance Máxima & SEO</h3>
+            <h3 class="pillar-title">Performance & SEO Técnico</h3>
             <p class="pillar-desc">
-              Páginas estáticas ultra velozes que carregam instantaneamente em redes móveis e atingem pontuação máxima nos Core Web Vitals.
+              Código limpo, estruturado para carregamento eficiente em redes móveis e otimizado segundo as diretrizes de Core Web Vitals.
             </p>
           </div>
 
@@ -392,14 +460,14 @@
             <span class="pillar-num">PILAR 08</span>
             <h3 class="pillar-title">Decisão Sem Atrito</h3>
             <p class="pillar-desc">
-              Pontos de contato estrategicamente posicionados ao longo de toda a experiência, facilitando o agendamento no momento certo.
+              Pontos de contato estrategicamente posicionados ao longo da experiência, facilitando o diálogo no momento oportuno.
             </p>
           </div>
         </div>
 
-        <!-- Observação de Compliance Obrigatória -->
+        <!-- Observação Obrigatória de Boas Práticas e Compliance -->
         <div class="compliance-note-box">
-          <strong>Aviso de Compliance Regulatório:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+          <strong>Aviso de Boas Práticas e Compliance:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
         </div>
       </div>
     </section>
@@ -414,7 +482,7 @@
           </div>
           <h2 class="section-title">Soluções Desenvolvidas Sob Medida</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            Cada área de atuação possui regras éticas próprias, dinâmica comercial específica e expectativas de clientes distintas. Não usamos a mesma fórmula para tudo.
+            Cada área de atuação possui regras próprias, dinâmica de atendimento específica e expectativas de clientes distintas. Não usamos a mesma fórmula para tudo.
           </p>
         </div>
 
@@ -428,15 +496,15 @@
                 Consultórios digitais elegantes com foco no acolhimento do paciente e clareza sobre procedimentos, tratamentos e telemedicina.
               </p>
               <ul class="solution-points">
-                <li>Alinhamento técnico com a Resolução CFM 2.336/2023</li>
-                <li>Transmissão de autoridade médica e RQE especializado</li>
-                <li>Roteamento humanizado de triagem para o WhatsApp da clínica</li>
-                <li>Artigos de saúde com rigor informativo e SEO E-E-A-T</li>
+                <li>Desenvolvimento orientado às regras da Resolução CFM 2.336/2023</li>
+                <li>Apresentação de titulações e RQE com clareza informativa</li>
+                <li>Roteamento humanizado de contato para a equipe da clínica</li>
+                <li>Artigos de saúde com rigor informativo e foco educativo</li>
               </ul>
             </div>
             <a href="sites-para-medicos.html" class="btn btn-secondary w-full">
               <span>Explorar Solução para Médicos</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
             </a>
           </div>
 
@@ -452,12 +520,12 @@
                 <li>Apresentação de corpo clínico com mini-currículos técnicos</li>
                 <li>Organização clara de especialidades e exames disponíveis</li>
                 <li>Direcionamento de pacientes para a recepção ou setor específico</li>
-                <li>Galeria institucional de ambientes e padrão de biossegurança</li>
+                <li>Apresentação de instalações e estrutura de atendimento</li>
               </ul>
             </div>
             <a href="sites-para-clinicas.html" class="btn btn-secondary w-full">
               <span>Explorar Solução para Clínicas</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
             </a>
           </div>
 
@@ -467,10 +535,10 @@
               <span class="solution-tag">Direito & Advocacia</span>
               <h3 class="subsection-title" style="margin-bottom: 12px;">Sites para Advogados</h3>
               <p>
-                Posicionamento de alto prestígio para bancas jurídicas e escritórios que atuam em causas cíveis, empresariais e consultivas.
+                Posicionamento de alto prestígio para bancas jurídicas e escritórios que atuam em áreas cíveis, empresariais e previdenciárias.
               </p>
               <ul class="solution-points">
-                <li>Alinhamento técnico com o Provimento 205/2021 do CFOAB</li>
+                <li>Comunicação orientada aos parâmetros do Provimento 205/2021 do CFOAB</li>
                 <li>Linguagem técnica refinada, informativa e sem apelo mercantilista</li>
                 <li>Apresentação clara de áreas de atuação e sócios fundadores</li>
                 <li>Páginas de artigos e teses jurídicas para geração de autoridade</li>
@@ -478,7 +546,7 @@
             </div>
             <a href="sites-para-advogados.html" class="btn btn-secondary w-full">
               <span>Explorar Solução para Advogados</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
             </a>
           </div>
 
@@ -488,18 +556,18 @@
               <span class="solution-tag">Finanças & Gestão</span>
               <h3 class="subsection-title" style="margin-bottom: 12px;">Sites para Contadores</h3>
               <p>
-                Transformação de escritórios contábeis tradicionais em parceiros estratégicos de inteligência financeira e BPO de alto valor.
+                Apresentação de escritórios contábeis como parceiros estratégicos em gestão tributária e BPO financeiro de valor.
               </p>
               <ul class="solution-points">
                 <li>Foco em contabilidade consultiva, planejamento tributário e BPO</li>
-                <li>Comunicação orientada a empresários, diretores e tomadores de decisão</li>
-                <li>Calculadoras e diagnósticos preliminares de economia tributária</li>
-                <li>Integração direta com o WhatsApp comercial do escritório</li>
+                <li>Comunicação orientada a empresários e tomadores de decisão</li>
+                <li>Apresentação clara de diferenciais de atendimento e escopo</li>
+                <li>Integração direta com o canal comercial do escritório</li>
               </ul>
             </div>
             <a href="sites-para-contadores.html" class="btn btn-secondary w-full">
               <span>Explorar Solução para Contadores</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -512,180 +580,168 @@
         <div class="section-header-center">
           <div class="badge-kicker">
             <span class="badge-dot"></span>
-            <span>CASES SELECIONADOS</span>
+            <span>PORTFÓLIO SELECIONADO</span>
           </div>
-          <h2 class="section-title">Projetos Reais. Resultados Tangíveis.</h2>
+          <h2 class="section-title">Projetos Reais</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            Não exibimos mockups conceituais ou números fabricados. Estes são projetos desenvolvidos pela WD Web Studio em operação ativa no mercado.
+            Conheça alguns dos projetos desenvolvidos pela WD Web Studio, com prévias reais e links diretos para cada site em operação.
           </p>
         </div>
 
-        <!-- Case 1: Bandoch Alves -->
-        <div class="case-card">
-          <div class="case-info">
-            <div class="case-meta-tag">
-              <i data-lucide="check" style="width: 14px; height: 14px;"></i>
-              <span>Contabilidade Estratégica & BPO</span>
-            </div>
-            <h3 class="subsection-title" style="margin-bottom: 14px;">Bandoch Alves Contabilidade</h3>
-            <p>
-              Estruturação digital completa para posicionar a Bandoch Alves como referência em inteligência contábil, gestão tributária e terceirização financeira para empresas de médio porte no Paraná e além.
-            </p>
-
-            <div class="case-structure-grid">
-              <div class="case-structure-item">
-                <strong>Segmento</strong>
-                <span>Contabilidade Consultiva & BPO</span>
-              </div>
-              <div class="case-structure-item">
-                <strong>Estratégia</strong>
-                <span>Reposicionamento de valor e autoridade corporativa</span>
-              </div>
-              <div class="case-structure-item">
-                <strong>Tecnologia</strong>
-                <span>Página estática de alta velocidade, SEO E-E-A-T</span>
-              </div>
-              <div class="case-structure-item">
-                <strong>Entrega</strong>
-                <span>Planta em 12 dobras, artigos e triagem no WhatsApp</span>
-              </div>
-            </div>
-
-            <a href="portfolio.html#bandoch-alves" class="btn btn-secondary" style="align-self: flex-start;">
-              <span>Ver Detalhes do Case</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
-            </a>
-          </div>
-
-          <div class="case-preview">
-            <div style="text-align: center; max-width: 380px;">
-              <div style="background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; box-shadow: var(--shadow-card);">
-                <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-emerald); font-weight: 700; margin-bottom: 12px;">Case Study</div>
-                <div style="font-size: 1.4rem; font-family: var(--font-heading); font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">BANDOCH ALVES</div>
-                <p style="font-size: 0.85rem; margin-bottom: 16px;">
-                  "Transformamos a contabilidade tradicional em um motor de segurança jurídica e previsibilidade financeira."
-                </p>
-                <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
-                  <span class="badge-kicker" style="margin-bottom: 0; font-size: 0.72rem;">BPO Financeiro</span>
-                  <span class="badge-kicker" style="margin-bottom: 0; font-size: 0.72rem;">Compliance Fiscal</span>
+        <div class="portfolio-grid-2x2">
+          <!-- PROJETO 1: WD Informática -->
+          <article class="portfolio-card-item">
+            <a href="https://www.wdinformatica.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-card-preview" aria-label="Acessar site da WD Informática (abre em nova aba)">
+              <div class="case-browser-bar">
+                <div class="case-browser-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="case-browser-url">
+                  <i data-lucide="lock" style="width: 10px; height: 10px;" aria-hidden="true"></i>
+                  <span>wdinformatica.com.br</span>
+                </div>
+                <div class="case-browser-badge">
+                  <span>Site Online</span>
+                  <i data-lucide="arrow-up-right" style="width: 10px; height: 10px;" aria-hidden="true"></i>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case 2: Janeiro Advocacia -->
-        <div class="case-card">
-          <div class="case-info">
-            <div class="case-meta-tag">
-              <i data-lucide="check" style="width: 14px; height: 14px;"></i>
-              <span>Direito & Advocacia</span>
-            </div>
-            <h3 class="subsection-title" style="margin-bottom: 14px;">Janeiro Advocacia</h3>
-            <p>
-              Presença digital sóbria e de alto impacto para a banca do Dr. André Janeiro, com foco em Direito Empresarial, Cível e Previdenciário. Projeto 100% alinhado com o Provimento 205/2021 da OAB e LGPD completa.
-            </p>
-
-            <div class="case-structure-grid">
-              <div class="case-structure-item">
-                <strong>Segmento</strong>
-                <span>Banca Jurídica & Advocacia</span>
+              <div class="case-browser-viewport">
+                <img src="assets/cases/preview-wd-informatica.png" alt="Preview da homepage do site WD Informática" width="1280" height="800" loading="lazy">
               </div>
-              <div class="case-structure-item">
-                <strong>Estratégia</strong>
-                <span>Autoridade sóbria e blindagem técnica ética</span>
-              </div>
-              <div class="case-structure-item">
-                <strong>Recursos</strong>
-                <span>Banner de Cookies, Termos de Uso e Política LGPD</span>
-              </div>
-              <div class="case-structure-item">
-                <strong>Resultado</strong>
-                <span>Triagem direta via WhatsApp por área de atuação</span>
-              </div>
-            </div>
-
-            <a href="portfolio.html#janeiro-advocacia" class="btn btn-secondary" style="align-self: flex-start;">
-              <span>Ver Detalhes do Case</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
             </a>
-          </div>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-category">TECNOLOGIA / INFORMÁTICA</div>
+              <h3 class="portfolio-card-title">WD Informática</h3>
+              <p class="portfolio-card-desc">
+                Site institucional para empresa de tecnologia, assistência técnica e soluções digitais.
+              </p>
+              <div style="margin-top: auto;">
+                <a href="https://www.wdinformatica.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Ver projeto</span>
+                  <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
 
-          <div class="case-preview">
-            <div style="text-align: center; max-width: 380px;">
-              <div style="background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; box-shadow: var(--shadow-card);">
-                <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-champagne); font-weight: 700; margin-bottom: 12px;">Case Study</div>
-                <div style="font-size: 1.4rem; font-family: var(--font-heading); font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">JANEIRO ADVOCACIA</div>
-                <p style="font-size: 0.85rem; margin-bottom: 16px;">
-                  "Defesa técnica, discrição e excelência estratégica para clientes empresariais e individuais."
-                </p>
-                <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
-                  <span class="badge-kicker" style="margin-bottom: 0; font-size: 0.72rem;">Direito Empresarial</span>
-                  <span class="badge-kicker" style="margin-bottom: 0; font-size: 0.72rem;">Ética OAB</span>
+          <!-- PROJETO 2: Bandoch Alves -->
+          <article class="portfolio-card-item">
+            <a href="https://www.bandochalvescontabilidade.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-card-preview" aria-label="Acessar site da Bandoch Alves Contabilidade (abre em nova aba)">
+              <div class="case-browser-bar">
+                <div class="case-browser-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="case-browser-url">
+                  <i data-lucide="lock" style="width: 10px; height: 10px;" aria-hidden="true"></i>
+                  <span>bandochalvescontabilidade.com.br</span>
+                </div>
+                <div class="case-browser-badge">
+                  <span>Site Online</span>
+                  <i data-lucide="arrow-up-right" style="width: 10px; height: 10px;" aria-hidden="true"></i>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case 3: WD Informática -->
-        <div class="case-card">
-          <div class="case-info">
-            <div class="case-meta-tag">
-              <i data-lucide="check" style="width: 14px; height: 14px;"></i>
-              <span>Tecnologia & Infraestrutura</span>
-            </div>
-            <h3 class="subsection-title" style="margin-bottom: 14px;">WD Informática</h3>
-            <p>
-              Site corporativo para empresa de tecnologia especializada em infraestrutura de redes, suporte gerenciado, servidores e segurança da informação para empresas em Umuarama e região.
-            </p>
-
-            <div class="case-structure-grid">
-              <div class="case-structure-item">
-                <strong>Segmento</strong>
-                <span>TI Corporativa & Redes</span>
+              <div class="case-browser-viewport">
+                <img src="assets/cases/preview-bandoch-alves.png" alt="Preview da homepage do site Bandoch Alves Contabilidade" width="1280" height="800" loading="lazy">
               </div>
-              <div class="case-structure-item">
-                <strong>Estratégia</strong>
-                <span>Apresentação de soluções B2B com foco em prevenção</span>
-              </div>
-              <div class="case-structure-item">
-                <strong>Recursos</strong>
-                <span>Página de LGPD dedicada, Termos de Uso e Cookies</span>
-              </div>
-              <div class="case-structure-item">
-                <strong>Entrega</strong>
-                <span>Site estático leve, responsivo e seguro</span>
-              </div>
-            </div>
-
-            <a href="portfolio.html#wd-informatica" class="btn btn-secondary" style="align-self: flex-start;">
-              <span>Ver Detalhes do Case</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
             </a>
-          </div>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-category">CONTABILIDADE</div>
+              <h3 class="portfolio-card-title">Bandoch Alves</h3>
+              <p class="portfolio-card-desc">
+                Presença digital estratégica para escritório de contabilidade e estratégia tributária.
+              </p>
+              <div style="margin-top: auto;">
+                <a href="https://www.bandochalvescontabilidade.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Ver projeto</span>
+                  <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
 
-          <div class="case-preview">
-            <div style="text-align: center; max-width: 380px;">
-              <div style="background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; box-shadow: var(--shadow-card);">
-                <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-emerald); font-weight: 700; margin-bottom: 12px;">Case Study</div>
-                <div style="font-size: 1.4rem; font-family: var(--font-heading); font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">WD INFORMÁTICA</div>
-                <p style="font-size: 0.85rem; margin-bottom: 16px;">
-                  "Infraestrutura de TI e conectividade estável para operações empresariais que não podem parar."
-                </p>
-                <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
-                  <span class="badge-kicker" style="margin-bottom: 0; font-size: 0.72rem;">Redes & Servidores</span>
-                  <span class="badge-kicker" style="margin-bottom: 0; font-size: 0.72rem;">Suporte B2B</span>
+          <!-- PROJETO 3: Janeiro Advocacia -->
+          <article class="portfolio-card-item">
+            <a href="https://www.janeiroadvocacia.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-card-preview" aria-label="Acessar site do escritório Janeiro Advocacia (abre em nova aba)">
+              <div class="case-browser-bar">
+                <div class="case-browser-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="case-browser-url">
+                  <i data-lucide="lock" style="width: 10px; height: 10px;" aria-hidden="true"></i>
+                  <span>janeiroadvocacia.com.br</span>
+                </div>
+                <div class="case-browser-badge">
+                  <span>Site Online</span>
+                  <i data-lucide="arrow-up-right" style="width: 10px; height: 10px;" aria-hidden="true"></i>
                 </div>
               </div>
+              <div class="case-browser-viewport">
+                <img src="assets/cases/preview-janeiro-advocacia.png" alt="Preview da homepage do site Janeiro Advocacia" width="1280" height="800" loading="lazy">
+              </div>
+            </a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-category">DIREITO PREVIDENCIÁRIO</div>
+              <h3 class="portfolio-card-title">Janeiro Advocacia</h3>
+              <p class="portfolio-card-desc">
+                Site institucional para escritório especializado em Direito Previdenciário.
+              </p>
+              <div style="margin-top: auto;">
+                <a href="https://www.janeiroadvocacia.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Ver projeto</span>
+                  <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
-          </div>
+          </article>
+
+          <!-- PROJETO 4: Focin Farma -->
+          <article class="portfolio-card-item">
+            <a href="https://www.focinfarma.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-card-preview" aria-label="Acessar site da Focin Farma (abre em nova aba)">
+              <div class="case-browser-bar">
+                <div class="case-browser-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="case-browser-url">
+                  <i data-lucide="lock" style="width: 10px; height: 10px;" aria-hidden="true"></i>
+                  <span>focinfarma.com.br</span>
+                </div>
+                <div class="case-browser-badge">
+                  <span>Site Online</span>
+                  <i data-lucide="arrow-up-right" style="width: 10px; height: 10px;" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="case-browser-viewport">
+                <img src="assets/cases/preview-focin-farma.png" alt="Preview da homepage do site Focin Farma Manipulação Veterinária" width="1280" height="800" loading="lazy">
+              </div>
+            </a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-category">FARMÁCIA DE MANIPULAÇÃO VETERINÁRIA</div>
+              <h3 class="portfolio-card-title">Focin Farma</h3>
+              <p class="portfolio-card-desc">
+                Presença digital para empresa especializada em soluções de manipulação veterinária.
+              </p>
+              <div style="margin-top: auto;">
+                <a href="https://www.focinfarma.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Ver projeto</span>
+                  <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
 
-        <div class="text-center" style="margin-top: 40px;">
+        <div class="text-center" style="margin-top: 48px;">
           <a href="portfolio.html" class="btn btn-primary btn-lg">
-            <span>Ver Todo o Portfólio do Estúdio</span>
-            <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+            <span>Conhecer Mais Sobre Nossos Projetos</span>
+            <i data-lucide="arrow-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -696,17 +752,17 @@
       <div class="container">
         <div class="editorial-manifesto">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
-            <i data-lucide="quote" class="text-emerald" style="width: 28px; height: 28px;"></i>
+            <i data-lucide="quote" class="text-emerald" style="width: 28px; height: 28px;" aria-hidden="true"></i>
             <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-emerald); font-weight: 700;">Visão do Estúdio</span>
           </div>
 
           <p class="manifesto-quote">
-            "Não começamos pelo layout. Começamos pelo problema que a sua presença digital precisa resolver. Uma empresa pequena o suficiente para ser cuidadosa nos mínimos detalhes, e sofisticada o suficiente para trabalhar com os profissionais mais exigentes do país."
+            "Não começamos pelo layout. Começamos pelo problema que a sua presença digital precisa resolver. Uma empresa pequena o suficiente para ser cuidadosa nos mínimos detalhes, e sofisticada o suficiente para trabalhar com profissionais de alto valor."
           </p>
 
           <div class="manifesto-author-box">
             <div class="manifesto-avatar">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
               </svg>
             </div>
@@ -719,7 +775,7 @@
       </div>
     </section>
 
-    <!-- 8. Formulário de Auditoria & Diagnóstico Interativo -->
+    <!-- 8. Formulário de Auditoria & Diagnóstico -->
     <section id="diagnostico" class="section-padding" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
       <div class="container">
         <div class="section-header-center">
@@ -729,7 +785,7 @@
           </div>
           <h2 class="section-title">Solicite uma Análise da Sua Presença Digital</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            Receba um diagnóstico criterioso sobre velocidade, clareza de posicionamento, pontos de perda de contato e alinhamento com seu conselho de classe.
+            Receba uma análise sobre clareza de posicionamento, pontos de contato e alinhamento às boas práticas do seu segmento.
           </p>
         </div>
 
@@ -756,7 +812,7 @@
                   <option value="Clínica / Centro de Saúde">Clínica / Centro Integrado de Saúde</option>
                   <option value="Advogado / Escritório Jurídico">Advogado / Escritório Jurídico</option>
                   <option value="Contador / Escritório Contábil">Contador / Escritório Contábil</option>
-                  <option value="Empresa de Alto Valor / Serviços">Empresa / Serviços de Alto Valor</option>
+                  <option value="Empresa de Serviços / Tecnologia">Empresa de Serviços / Tecnologia</option>
                   <option value="Outro Segmento">Outro Segmento</option>
                 </select>
               </div>
@@ -771,21 +827,21 @@
               <label for="auditGoal" class="form-label">Principal Desafio Atual *</label>
               <select id="auditGoal" class="form-control" required>
                 <option value="Construir autoridade e confiança imediata">Construir autoridade e confiança imediata</option>
-                <option value="Alinhar site com exigências do CRM/OAB/CFC">Alinhar site com exigências do CRM/OAB/CFC e LGPD</option>
-                <option value="Aumentar agendamentos qualificados no WhatsApp">Aumentar agendamentos qualificados no WhatsApp</option>
-                <option value="Redesign total para padrão premium">Redesign total para padrão estético refinado</option>
-                <option value="Criar presença digital do zero">Ainda não possuo site e quero começar com excelência</option>
+                <option value="Alinhar site com boas práticas éticas e LGPD">Alinhar site com boas práticas éticas e LGPD</option>
+                <option value="Melhorar o direcionamento de contatos no WhatsApp">Melhorar o direcionamento de contatos no WhatsApp</option>
+                <option value="Redesign para padrão estético refinado">Redesign para padrão estético refinado</option>
+                <option value="Criar presença digital do zero">Ainda não possuo site e quero começar com orientação estratégica</option>
               </select>
             </div>
 
             <button type="submit" class="btn btn-primary btn-lg w-full" style="margin-top: 12px;">
-              <span>Solicitar Minha Análise Estratégica</span>
-              <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+              <span>Solicitar Minha Análise</span>
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
             </button>
 
             <p style="font-size: 0.78rem; text-align: center; color: var(--text-secondary); margin-top: 16px;">
-              <i data-lucide="lock" style="width: 12px; height: 12px; display: inline-block; vertical-align: middle;"></i>
-              Seus dados serão utilizados exclusivamente para a análise técnica solicitada, em conformidade com a LGPD.
+              <i data-lucide="lock" style="width: 12px; height: 12px; display: inline-block; vertical-align: middle;" aria-hidden="true"></i>
+              Seus dados serão utilizados exclusivamente para a análise solicitada, em conformidade com as diretrizes da LGPD.
             </p>
           </form>
         </div>
@@ -808,64 +864,64 @@
 
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-button" type="button">
+            <button class="faq-button" type="button" aria-expanded="false">
               <span>A WD Web Studio atende profissionais e empresas fora de Umuarama?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Sim. Embora nosso estúdio físico esteja sediado em Umuarama, Paraná, nosso fluxo de trabalho é 100% estruturado para atendimento remoto de alta proximidade em qualquer cidade ou estado do Brasil. Realizamos alinhamentos estratégicos por videoconferência, acompanhamento em tempo real e entrega contínua.
+                Sim. Embora nosso estúdio físico esteja sediado em Umuarama, Paraná, nosso fluxo de trabalho é estruturado para atendimento remoto com alinhamento contínuo em qualquer cidade ou estado do Brasil. Realizamos apresentações e acompanhamento do projeto em tempo real.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-button" type="button">
-              <span>Como funciona a conformidade técnica com o CRM e a OAB?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>Como funciona o desenvolvimento orientado às regras profissionais?</span>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Projetamos cada linha de código e cada parágrafo de texto respeitando estritamente os critérios técnicos estabelecidos pelas resoluções vigentes (como a Resolução CFM 2.336/2023 para médicos e o Provimento 205/2021 da OAB para advogados). Eliminamos promessas de resultados, gatilhos mercantilistas abusivos e asseguramos transparência nas qualificações e responsabilidades técnicas.
+                Estruturamos textos e seções considerando as regras de publicidade dos conselhos de classe vigentes (como a Resolução CFM 2.336/2023 na medicina e o Provimento 205/2021 da OAB na advocacia), evitando abordagens mercantilistas ou promessas indevidas de resultado.
               </p>
               <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">
-                <em>Nota: A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.</em>
+                <em>A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.</em>
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-button" type="button">
+            <button class="faq-button" type="button" aria-expanded="false">
               <span>Por que a WD não utiliza templates prontos de WordPress?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Sites baseados em templates genéricos carregam dezenas de bibliotecas desnecessárias, plugins que quebram a cada atualização, e brechas de segurança recorrentes. Desenvolvemos com arquitetura moderna, código limpo e componentes estáticos que carregam em menos de um segundo, oferecem segurança blindada e garantem notas máximas nos índices do Google.
+                Priorizamos código moderno, limpo e estruturado sob medida, o que proporciona navegação estável, carregamento ágil e redução de vulnerabilidades associadas a plugins de terceiros.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-button" type="button">
+            <button class="faq-button" type="button" aria-expanded="false">
               <span>Qual é o prazo médio de desenvolvimento de um projeto?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Por operarmos no modelo de estúdio boutique com número limitado de projetos simultâneos, o prazo médio varia entre 15 a 25 dias úteis, dependendo do número de páginas e complexidade dos artigos dedicados. Todo o cronograma é acordado formalmente na proposta inicial.
+                Operamos com capacidade limitada para assegurar dedicação próxima a cada projeto. O cronograma varia conforme a complexidade e número de páginas, sendo estabelecido formalmente na etapa de planejamento.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-button" type="button">
-              <span>Eu terei autonomia para solicitar alterações após o lançamento?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>Como funciona a manutenção do site após a entrega?</span>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Sim. Todos os nossos projetos incluem garantia técnica de lançamento, suporte direto com quem programou o site e opções de sustentação contínua para inclusão de novos artigos, atualização de tratamentos ou ajustes institucionais.
+                Oferecemos acompanhamento pós-lançamento e suporte contínuo para atualizações de serviços, inclusão de novos artigos e evoluções de conteúdo.
               </p>
             </div>
           </div>
@@ -878,17 +934,17 @@
       <div class="container text-center" style="max-width: 780px;">
         <div class="badge-kicker">
           <span class="badge-dot"></span>
-          <span>CAPACIDADE LIMITADA POR SAFRA</span>
+          <span>CAPACIDADE DEDICADA</span>
         </div>
         <h2 class="display-title" style="font-size: clamp(2rem, 3.8vw, 3.2rem); margin-bottom: 20px;">
           Sua atuação é de alto nível. Seu site precisa refletir isso.
         </h2>
         <p class="text-lead" style="margin-bottom: 36px;">
-          Não aceite templates descartáveis ou promessas vazias de agências massificadas. Trabalhe diretamente com quem compreende a nobreza da sua profissão e os detalhes técnicos do seu segmento.
+          Trabalhe diretamente com quem compreende as exigências técnicas da sua área e constrói uma presença digital alinhada ao seu posicionamento.
         </p>
         <a href="auditoria-de-site.html" class="btn btn-primary btn-lg">
           <span>Iniciar Conversa com o Estúdio</span>
-          <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;"></i>
+          <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
         </a>
       </div>
     </section>
@@ -902,7 +958,7 @@
         <div>
           <a href="index.html" class="brand-link" style="margin-bottom: 18px;">
             <div class="brand-symbol">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
                 <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
               </svg>
             </div>
@@ -912,7 +968,7 @@
             </div>
           </a>
           <p style="font-size: 0.88rem; line-height: 1.7; max-width: 340px;">
-            Estúdio boutique especializado em presença digital de alto impacto, arquitetura de conversão e conformidade técnica para profissionais regulamentados e empresas no Brasil.
+            Estúdio boutique especializado em presença digital estratégica, arquitetura de conteúdo e orientação técnica para profissionais regulamentados e empresas.
           </p>
           <div style="margin-top: 18px; font-size: 0.8rem; color: var(--color-emerald); font-weight: 600;">
             Umuarama — Paraná • Brasil
@@ -947,21 +1003,21 @@
         <div>
           <div class="footer-col-title">Atendimento</div>
           <p style="font-size: 0.88rem; margin-bottom: 12px;">
-            Atendimento estratégico para profissionais em todo o território nacional.
+            Atendimento estratégico para profissionais e empresas em todo o Brasil.
           </p>
           <p style="font-size: 0.85rem; color: var(--text-primary); font-weight: 600; margin-bottom: 6px;">
             Segunda a Sexta: 08h às 18h
           </p>
           <a href="auditoria-de-site.html" class="btn btn-secondary btn-sm" style="margin-top: 10px;">
             <span>Falar com o Estúdio</span>
-            <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            <i data-lucide="arrow-right" style="width: 14px; height: 14px;" aria-hidden="true"></i>
           </a>
         </div>
       </div>
 
-      <!-- Disclaimer Obrigatório de Compliance -->
+      <!-- Disclaimer Obrigatório de Boas Práticas e Compliance -->
       <div style="padding-top: 24px; border-top: 1px solid var(--border-color); font-size: 0.78rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
-        <strong>Nota Regulamentar e Informativa:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+        <strong>Nota Informativa:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
       </div>
 
       <!-- Footer Bottom -->
@@ -978,15 +1034,15 @@
     </div>
   </footer>
 
-  <!-- Banner de Consentimento de Cookies Glassmorphism (LGPD) -->
+  <!-- Banner de Consentimento de Cookies -->
   <div id="cookieBanner" class="cookie-banner-wrapper" role="region" aria-label="Consentimento de Cookies">
     <div class="cookie-banner-content">
       <div class="cookie-banner-icon">
-        <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
+        <i data-lucide="shield-check" style="width: 20px; height: 20px;" aria-hidden="true"></i>
       </div>
       <div>
         <p class="cookie-banner-text">
-          Nós utilizamos cookies essenciais e tecnologias semelhantes para garantir o funcionamento seguro do site e aprimorar sua experiência técnica, de acordo com a nossa <a href="termos-e-politicas.html#privacidade" class="cookie-privacy-link">Política de Privacidade</a>.
+          Utilizamos cookies essenciais e tecnologias semelhantes para garantir o funcionamento seguro do site, de acordo com a nossa <a href="termos-e-politicas.html#privacidade" class="cookie-privacy-link">Política de Privacidade</a>.
         </p>
         <div class="cookie-banner-actions">
           <button id="cookieAcceptBtn" class="btn btn-primary btn-sm">Aceitar Todos</button>

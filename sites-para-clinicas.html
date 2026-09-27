@@ -4,19 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sites para Clínicas & Centros de Saúde — WD Web Studio</title>
-  <meta name="description" content="Websites institucionais de alto padrão para policlínicas e centros médicos integrados. Organização do corpo clínico, especialidades, agendamento setorizado e conformidade técnica.">
+  <meta name="description" content="Websites institucionais para policlínicas e centros de saúde. Organização do corpo clínico, especialidades, agendamento setorizado e boas práticas de comunicação.">
   <link rel="canonical" href="https://wdwebstudio.com.br/sites-para-clinicas">
   
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sites para Clínicas & Centros de Saúde — WD Web Studio">
   <meta property="og:description" content="Presença institucional de prestígio para policlínicas e centros integrados de saúde.">
-  
+  <meta property="og:url" content="https://wdwebstudio.com.br/sites-para-clinicas">
+  <meta property="og:site_name" content="WD Web Studio">
+  <meta property="og:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sites para Clínicas & Centros de Saúde — WD Web Studio">
+  <meta name="twitter:description" content="Presença institucional para policlínicas e centros de saúde.">
+  <meta name="twitter:image" content="https://wdwebstudio.com.br/assets/cases/preview-wd-informatica.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icons (Versão Fixa) -->
+  <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Dados Estruturados / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://wdwebstudio.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sites para Clínicas",
+            "item": "https://wdwebstudio.com.br/sites-para-clinicas"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como o site lida com a entrada ou saída frequente de médicos parceiros?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Construímos uma arquitetura modular. A equipe administrativa pode solicitar a adição ou atualização de informações e especialidades com agilidade técnica, mantendo o diretório clínico sempre atualizado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "É possível integrar com o software de agendamento online da clínica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Podemos integrar links diretos para plataformas de agendamento externo ou manter canais de atendimento direto via WhatsApp."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
@@ -24,9 +83,9 @@
   <!-- Header Editorial Tech -->
   <header class="header-main" role="banner">
     <div class="container header-container">
-      <a href="index.html" class="brand-link">
+      <a href="index.html" class="brand-link" aria-label="WD Web Studio - Página Inicial">
         <div class="brand-symbol">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
             <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
           </svg>
         </div>
@@ -36,7 +95,7 @@
         </div>
       </a>
 
-      <nav class="nav-desktop">
+      <nav class="nav-desktop" aria-label="Navegação Principal">
         <a href="index.html" class="nav-link">Início</a>
         <a href="sites-para-medicos.html" class="nav-link">Médicos</a>
         <a href="sites-para-clinicas.html" class="nav-link active">Clínicas</a>
@@ -50,10 +109,10 @@
       <div style="display: flex; align-items: center; gap: 14px;">
         <a href="auditoria-de-site.html" class="btn btn-primary btn-sm">
           <span>Solicitar Análise</span>
-          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;" aria-hidden="true"></i>
         </a>
-        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu" aria-expanded="false">
-          <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+        <button id="mobileMenuBtn" class="menu-mobile-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileDrawer">
+          <i data-lucide="menu" style="width: 22px; height: 22px;" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -91,19 +150,19 @@
             <span>CENTROS MÉDICOS & POLICLÍNICAS</span>
           </div>
           <h1 class="display-title" style="margin-bottom: 24px;">
-            Portais institucionais que traduzem a infraestrutura e a <span class="text-emerald">credibilidade clínica</span> da sua instituição.
+            Portais institucionais que traduzem a infraestrutura e a <span class="text-emerald">credibilidade</span> da sua instituição.
           </h1>
           <p class="text-lead">
-            Desenvolvemos plataformas web para clínicas multidisciplinares e centros diagnósticos. Organização intuitiva de especialidades, apresentação clara do corpo clínico com RQE e agendamento setorizado sem sobrecarregar a recepção.
+            Desenvolvemos plataformas web para clínicas multidisciplinares e centros diagnósticos. Organização intuitiva de especialidades, apresentação clara do corpo clínico e canais de contato setorizados para facilitar a jornada do paciente.
           </p>
 
           <div class="hero-actions">
             <a href="#diagnostico-clinica" class="btn btn-primary btn-lg">
               <span>Solicitar Análise de Portal Clínico</span>
-              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
             </a>
             <a href="portfolio.html" class="btn btn-secondary btn-lg">
-              <span>Ver Casos Reais de Saúde</span>
+              <span>Ver Casos Reais</span>
             </a>
           </div>
         </div>
@@ -116,36 +175,36 @@
         <div class="section-header-center">
           <div class="badge-kicker">
             <span class="badge-dot"></span>
-            <span>ENGENHARIA PARA CENTROS MÉDICOS</span>
+            <span>ESTRUTURA PARA CENTROS DE SAÚDE</span>
           </div>
-          <h2 class="section-title">A Estrutura de um Grande Portal de Saúde</h2>
+          <h2 class="section-title">A Estrutura de um Portal de Saúde</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            Diferente de um consultório individual, uma clínica possui múltiplos fluxos de atendimento, exames complementares e recepção sobrecarregada. Nossa arquitetura organiza esse ecossistema.
+            Uma clínica possui múltiplos fluxos de atendimento, exames complementares e recepção ativa. Nossa arquitetura organiza essa comunicação de forma intuitiva.
           </p>
         </div>
 
         <div class="solutions-grid">
           <div class="card-studio">
             <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">01. Corpo Clínico Organizado</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Fichas Técnicas Individuais</h3>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Apresentação Técnica</h3>
             <p>
-              Apresentação elegante de cada profissional, listando graduação, especialidades registradas (RQE) e horários de atendimento, transmitindo autoridade coletiva.
+              Apresentação clara de cada profissional, listando graduação, especialidades registradas (RQE) e áreas de atendimento, transmitindo autoridade coletiva.
             </p>
           </div>
 
           <div class="card-studio">
             <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">02. Roteamento por Setor</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Triagem Setorial no WhatsApp</h3>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Canais Setoriais no WhatsApp</h3>
             <p>
-              O paciente pode direcionar o contato para o setor correto (exames, consultas específicas, financeiro ou convênios), reduzindo o tempo de espera e o estresse da recepção.
+              O paciente pode direcionar o contato para o setor correto (exames, consultas específicas ou convênios), tornando o atendimento da recepção mais organizado.
             </p>
           </div>
 
           <div class="card-studio">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">03. Infraestrutura & Biossegurança</div>
-            <h3 class="subsection-title" style="margin-bottom: 12px;">Galeria de Instalações</h3>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">03. Infraestrutura & Instalações</div>
+            <h3 class="subsection-title" style="margin-bottom: 12px;">Apresentação do Espaço</h3>
             <p>
-              Fotos profissionais dos consultórios, salas de exames e recepção, gerando segurança visual e valorização do ambiente físico da clínica.
+              Registros visuais dos consultórios, salas de procedimentos e recepção, valorizando o ambiente físico e o acolhimento oferecido pela clínica.
             </p>
           </div>
 
@@ -153,13 +212,18 @@
             <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-emerald); font-weight: 700; margin-bottom: 10px;">04. Preparo de Exames & FAQ</div>
             <h3 class="subsection-title" style="margin-bottom: 12px;">Orientações Pré-Exame</h3>
             <p>
-              Seções explicativas sobre jejum, recomendações e preparos para exames laboratoriais ou de imagem, diminuindo faltas e exames desmarcados na clínica.
+              Seções explicativas sobre recomendações e preparos para procedimentos ou exames, auxiliando a equipe com orientações prévias acessíveis.
             </p>
           </div>
         </div>
 
+        <!-- Alerta de Papel das Ferramentas Digitais -->
+        <div style="background: rgba(18, 24, 22, 0.6); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 24px; margin: 32px 0; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+          <strong style="color: var(--text-primary);">Aviso Importante:</strong> Ferramentas digitais auxiliam a jornada do usuário e a comunicação, mas não substituem avaliação médica ou consulta profissional individualizada.
+        </div>
+
         <div class="compliance-note-box">
-          <strong>Aviso Regulatório:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídico quando necessário.
+          <strong>Aviso de Boas Práticas e Compliance:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
         </div>
       </div>
     </section>
@@ -177,25 +241,25 @@
 
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-button" type="button">
+            <button class="faq-button" type="button" aria-expanded="false">
               <span>Como o site lida com a entrada ou saída frequente de médicos parceiros?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Construímos uma arquitetura modular. A equipe administrativa pode solicitar a adição ou atualização de fotos, especialidades e horários com agilidade técnica, mantendo o diretório clínico sempre rigorosamente em dia.
+                Construímos uma arquitetura modular. A equipe administrativa pode solicitar a adição ou atualização de informações e especialidades com agilidade técnica, mantendo o diretório clínico sempre atualizado.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
-            <button class="faq-button" type="button">
+            <button class="faq-button" type="button" aria-expanded="false">
               <span>É possível integrar com o software de agendamento online da clínica?</span>
-              <i data-lucide="chevron-down" class="faq-icon"></i>
+              <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
             </button>
             <div class="faq-content">
               <p>
-                Sim. Podemos integrar botões diretos para sistemas de prontuário e agendamento (como Doctoralia, Feegow, Amplimed, iClinic, etc.) mantendo em paralelo a opção de atendimento humanizado via WhatsApp para pacientes que preferem falar com uma atendente.
+                Sim. Podemos integrar links diretos para plataformas de agendamento externo ou manter canais de atendimento direto via WhatsApp, conforme o fluxo operacional da sua clínica.
               </p>
             </div>
           </div>
@@ -211,9 +275,9 @@
             <span class="badge-dot"></span>
             <span>CONSULTORIA PARA CLÍNICAS</span>
           </div>
-          <h2 class="section-title">Modernize o Portal da Sua Clínica</h2>
+          <h2 class="section-title">Estruture o Portal da Sua Clínica</h2>
           <p class="text-lead" style="margin-top: 16px;">
-            Converse diretamente com o estúdio para desenharmos uma arquitetura sob medida para sua clínica.
+            Converse diretamente com o estúdio para desenharmos uma arquitetura sob medida para sua instituição.
           </p>
         </div>
 
@@ -233,11 +297,11 @@
 
             <div class="form-grid-2">
               <div class="form-group">
-                <label for="auditSegment" class="form-label">Número Aproximado de Médicos / Especialistas *</label>
+                <label for="auditSegment" class="form-label">Porte da Clínica *</label>
                 <select id="auditSegment" class="form-control" required>
-                  <option value="Clínica até 5 médicos">Até 5 profissionais</option>
-                  <option value="Clínica 6 a 15 médicos">De 6 a 15 profissionais</option>
-                  <option value="Centro Integrado 15+ médicos">Mais de 15 profissionais / Policlínica</option>
+                  <option value="Clínica até 5 profissionais">Até 5 profissionais</option>
+                  <option value="Clínica 6 a 15 profissionais">De 6 a 15 profissionais</option>
+                  <option value="Centro Integrado 15+ profissionais">Mais de 15 profissionais / Policlínica</option>
                   <option value="Centro Diagnóstico / Laboratório">Centro de Diagnóstico / Laboratório</option>
                 </select>
               </div>
@@ -251,16 +315,16 @@
             <div class="form-group">
               <label for="auditGoal" class="form-label">Principal Desafio da Clínica *</label>
               <select id="auditGoal" class="form-control" required>
-                <option value="Desafogar a recepção organizando o agendamento no site">Desafogar a recepção organizando o agendamento no site</option>
-                <option value="Transmitir sofisticação e infraestrutura para atrair novos pacientes">Transmitir sofisticação e infraestrutura para atrair novos pacientes</option>
-                <option value="Apresentar o corpo clínico com clareza e autoridade técnica">Apresentar o corpo clínico com clareza e autoridade técnica</option>
-                <option value="Adequação integral às resoluções CFM e LGPD">Adequação integral às resoluções CFM e LGPD</option>
+                <option value="Organizar o atendimento e canais de contato no site">Organizar o atendimento e canais de contato no site</option>
+                <option value="Apresentar o corpo clínico e instalações com clareza">Apresentar o corpo clínico e instalações com clareza</option>
+                <option value="Adequação da comunicação às boas práticas éticas">Adequação da comunicação às boas práticas éticas</option>
+                <option value="Redesign completo para modernização visual">Redesign completo para modernização visual</option>
               </select>
             </div>
 
             <button type="submit" class="btn btn-primary btn-lg w-full" style="margin-top: 12px;">
               <span>Solicitar Análise de Portal Clínico</span>
-              <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px;" aria-hidden="true"></i>
             </button>
           </form>
         </div>
@@ -275,7 +339,7 @@
         <div>
           <a href="index.html" class="brand-link" style="margin-bottom: 18px;">
             <div class="brand-symbol">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald" aria-hidden="true">
                 <polyline points="4 6 8 18 12 9 16 18 20 6"></polyline>
               </svg>
             </div>
@@ -317,7 +381,7 @@
       </div>
 
       <div style="padding-top: 24px; border-top: 1px solid var(--border-color); font-size: 0.78rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
-        <strong>Nota Regulamentar:</strong> A estrutura de compliance é desenvolvida com foco técnico e informacional. A validação jurídica específica deve ser realizada pelo profissional ou empresa responsável, com seu respectivo assessoramento jurídica quando necessário.
+        <strong>Nota Informativa:</strong> A estrutura técnica e de conteúdo é desenvolvida considerando boas práticas e regras aplicáveis ao segmento. A validação jurídica ou regulatória específica permanece sob responsabilidade do profissional ou de seu assessor jurídico.
       </div>
 
       <div class="footer-bottom">
@@ -333,7 +397,7 @@
   <!-- Cookie Consent -->
   <div id="cookieBanner" class="cookie-banner-wrapper" role="region" aria-label="Consentimento de Cookies">
     <div class="cookie-banner-content">
-      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;"></i></div>
+      <div class="cookie-banner-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;" aria-hidden="true"></i></div>
       <div>
         <p class="cookie-banner-text">
           Utilizamos cookies essenciais de acordo com a nossa <a href="termos-e-politicas.html#privacidade" class="cookie-privacy-link">Política de Privacidade</a>.
